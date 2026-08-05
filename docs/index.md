@@ -6,3 +6,4 @@ This is my documentation website built with Fern.
 - Documentation
 - Search
 - Dark Mode
+- Easy interface

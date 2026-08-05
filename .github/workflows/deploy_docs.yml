@@ -1,4 +1,4 @@
-name: Deploy Docs
+name: Deploy Docs 
 
 on:
   push:
@@ -9,9 +9,18 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
       
-      - name: Deploy with Fern
-        uses: fern-api/action-publish@v0.0.40
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
         with:
-          token: ${{ secrets.FERN_TOKEN }}
+          node-version: 'lts/*'
+      
+      - name: Install Fern CLI
+        run: npm install -g @fern-api/cli
+      
+      - name: Deploy Docs
+        run: fern generate --docs
+        env:
+          FERN_TOKEN: ${{ secrets.FERN_TOKEN }}

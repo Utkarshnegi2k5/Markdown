@@ -6,7 +6,7 @@ This is a simple Markdown (`.md`) file.
 ### Features
 - Easy to read
 - Easy to write
-- Supports lists, links, and code
+- Supports lists and links
 
 ### Example Code
 ```python

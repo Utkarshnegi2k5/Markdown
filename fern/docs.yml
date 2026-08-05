@@ -1,0 +1,13 @@
+instances:
+  - url: https://mark-907872.docs.buildwithfern.com
+title: Mark 907872 | Documentation
+navigation:
+  - section: Introduction
+    contents:
+      - page: Home
+        path: ../docs/index.md
+      - page: Sample
+        path: ../docs/sample.md
+colors:
+  accentPrimary: '#ffffff'
+  background: '#000000'

@@ -9,6 +9,8 @@ navigation:
         path: ../docs/index.md
       - page: Sample
         path: ../docs/sample.md
+      - page: Installation
+        path: ../docs/installation.md
 colors:
   accentPrimary: '#ffffff'
   background: '#000000'

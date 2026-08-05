@@ -18,7 +18,7 @@ jobs:
           node-version: '18'
       
       - name: Install Fern CLI
-        run: npm install -g @fern-api/cli
+        run: npm install -g fern-api
       
       - name: Deploy Docs
         run: fern generate --docs

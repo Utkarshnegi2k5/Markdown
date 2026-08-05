@@ -2,7 +2,7 @@
 title: Markdown
 ---
 
-# Welcome to markdown
+# Welcome
 
 This is my documentation website built with Fern.
 

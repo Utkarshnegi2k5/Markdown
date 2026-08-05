@@ -7,7 +7,7 @@ Learn how to install and set up Mark.
 Before you begin, make sure you have:
 
 - Git installed
-- Node.js 18 or later
+- Node.js 18
 - A GitHub account
 
 ## Clone the Repository

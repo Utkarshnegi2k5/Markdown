@@ -1,4 +1,5 @@
-# Welcome
+# Welcome to Docs
+
 This is my documentation website built with Fern.
 
 ## Features

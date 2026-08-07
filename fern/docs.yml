@@ -20,9 +20,9 @@ navigation:
 
 logo: 
   href: https://www.monocloud.com/
-  dark: .\Image\images.jpg
-  light: .\Image\images.jpg  
-  right-text: Markdown
+  dark: .\Customize\Assets\Image\images.jpg
+  light: .\Customize\Assets\Image\images.jpg  
+  right-text: monocloud
   height: 30
 
 footer-links:

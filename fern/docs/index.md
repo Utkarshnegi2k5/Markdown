@@ -1,5 +1,8 @@
+import GradientBackground from "../Customize/Style/Gradient.jsx";
+
+<GradientBackground>
 ---
-title: Markdown
+title: Monocloud
 ---
 
 # Welcome
@@ -12,3 +15,4 @@ This is my documentation website built with Fern.
 - Search
 - Dark Mode
 - Easy interface
+<GradientBackground>

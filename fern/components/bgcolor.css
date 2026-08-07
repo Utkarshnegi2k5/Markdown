@@ -1,7 +1,8 @@
+/* Gradient background: blue at top center, black on sides */
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: radial-gradient(ellipse at center top, #0066ff 0%, #0044cc 20%, #000000 80%);
+  background: radial-gradient(ellipse 100% 50% at center top, #1e90ff 0%, #1e90ff 15%, #0000ff 30%, #000000 70%);
   overflow: hidden;
 }

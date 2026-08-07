@@ -1,6 +1,9 @@
 instances:
   - url: https://markdown-968565.docs.buildwithfern.com
- 
+
+css:
+  - Customize\Style\Gradient.css
+
 title: Mark 907872 | Documentation
 navigation:
   - section: Introduction

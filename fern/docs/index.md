@@ -2,7 +2,7 @@
 title: Mono Cloud
 ---
 
-import Hero from "./Customize/Style/Hero.jsx";
+import Hero from ".\Customize\Style\Hero.jsx";
 
 <Hero />
 

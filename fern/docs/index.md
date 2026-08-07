@@ -1,4 +1,4 @@
-import GradientBackground from "../Customize/Style/Gradient.jsx";
+import GradientBackground from "..\Customize\Style\Gradient.jsx";
 
 <GradientBackground>
 ---

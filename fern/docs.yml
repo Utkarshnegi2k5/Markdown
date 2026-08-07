@@ -50,6 +50,22 @@ navbar-links:
       - text: Tutorials
         href: https://example.com/tutorials
         icon: fa-regular fa-graduation-cap
+
+navbar-links:
+  - type: dropdown
+    text: Resources
+    icon: fa-solid fa-book
+    links:
+      - text: Documentation
+        href: https://example.com/docs
+        icon: fa-regular fa-file-lines
+      - text: API Reference
+        href: https://example.com/api
+        target: _blank
+        icon: fa-regular fa-code
+      - text: Tutorials
+        href: https://example.com/tutorials
+        icon: fa-regular fa-graduation-cap  
     
   
 

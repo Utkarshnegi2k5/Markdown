@@ -60,6 +60,9 @@ footer-links:
   github: https://github.com/monocloud
   x: https://x.com/monocld
 
-colors:
-  accentPrimary: '#ffffff'
-  background: '#172569'
+css:
+  - ./components/bgcolor.css
+
+# colors:
+#   accentPrimary: '#ffffff'
+#   background: '#090D26'

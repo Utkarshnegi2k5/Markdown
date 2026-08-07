@@ -1,7 +1,3 @@
-import GradientBackground from "..\Customize\Style\GradientBackground.jsx";
-
-
-<GradientBackground>
 ---
 title: Monocloud
 ---
@@ -16,4 +12,3 @@ This is my documentation website built with Fern.
 - Search
 - Dark Mode
 - Easy interface
-<GradientBackground>

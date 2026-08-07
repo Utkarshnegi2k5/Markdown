@@ -2,51 +2,22 @@ instances:
   - url: https://markdown-968565.docs.buildwithfern.com
 
 title: Mark 907872 | Documentation
-
-tabs:
-  getting-started:
-    display-name: Get Started
-    icon: fa-solid fa-rocket
-  authenticate:
-    display-name: Authenticate
-    icon: fa-solid fa-lock
-  manage-users:
-    display-name: Manage Users
-    icon: fa-solid fa-users
-  api-reference:
-    display-name: API Reference
-    icon: fa-solid fa-code
-
 navigation:
   - section: Introduction
     contents:
       - page: Home
         path: ./docs/index.mdx
-        tab: getting-started
   
   - section: Starting Guide
     contents:
       - folder: ./docs/Starting
         title: Starting
-        tab: getting-started
- 
-  - section: Authentication
-    contents:
-      - folder: ./docs/Authentication
-        title: Authentication Methods
-        tab: authenticate
- 
-  - section: User Management
-    contents:
-      - folder: ./docs/Users
-        title: User Management
-        tab: manage-users
- 
+
   - section: API
     contents:
       - folder: ./docs/API
-        title: API Reference
-        tab: api-reference
+        title: API
+
 logo: 
   href: https://www.monocloud.com/
   dark: .\Customize\Assets\Image\images.jpg

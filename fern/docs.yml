@@ -17,6 +17,14 @@ navigation:
     contents:
       - folder: ./docs/API
         title: API
+
+logo: 
+  href: https://example.com
+  dark: ./Image/images.jpg
+  light: ./Image/image.jpg  
+  right-text: Markdown
+  height: 30
+
 colors:
   accentPrimary: '#ffffff'
   background: '#000000'

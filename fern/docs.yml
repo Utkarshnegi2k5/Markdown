@@ -1,6 +1,10 @@
 instances:
   - url: https://markdown-968565.docs.buildwithfern.com
 
+experimental:
+  mdx-components: 
+    - ./components
+
 title: Mark 907872 | Documentation
 navigation:
   - section: Introduction

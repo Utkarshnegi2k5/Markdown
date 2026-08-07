@@ -27,14 +27,16 @@ logo:
 
 navbar-links:
   - type: minimal
+    text: Sign In
+    href: https://login.us.monocloud.com/ui/login?auth_id=1607978C7B41728A0E81CA38C342747545FC633888A280811738148E292B5AA2
+    rounded: false
+    
+  - type: minimal
     text: Sign Up
-    href: https://example.com/support
+    href: https://login.us.monocloud.com/ui/signup?auth_id=C0FFE732B1F7AD6F3332F9F9672CD3D2099DB685A7CA8D58DF871E42A98E124F
     target: _blank
     
-  - type: filled
-    text: Login
-    href: https://example.com/login
-    rounded: false
+  
 
 footer-links:
   github: https://github.com/monocloud

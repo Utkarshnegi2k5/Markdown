@@ -1,20 +1,25 @@
+/* Mono Cloud Custom Theme */
+
 body {
-  position: relative;
   background: #000000;
+  position: relative;
 }
 
+/* Top center blue glow */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
+
+  top: -150px;
   left: 50%;
   transform: translateX(-50%);
+
   width: 900px;
   height: 500px;
 
   background: radial-gradient(
     circle,
-    rgba(0, 0, 255, 0.55) 0%,
+    rgba(0, 140, 255, 0.55) 0%,
     rgba(0, 90, 255, 0.25) 35%,
     transparent 70%
   );

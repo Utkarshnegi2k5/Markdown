@@ -19,11 +19,15 @@ navigation:
         title: API
 
 logo: 
-  href: https://example.com
+  href: https://www.monocloud.com/
   dark: .\Image\images.jpg
   light: .\Image\images.jpg  
   right-text: Markdown
   height: 30
+
+footer-links:
+  github: https://github.com/monocloud
+  x: https://x.com/monocld
 
 colors:
   accentPrimary: '#ffffff'

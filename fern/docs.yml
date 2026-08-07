@@ -7,10 +7,16 @@ navigation:
     contents:
       - page: Home
         path: ./docs/index.md
-      - page: Sample
-        path: ./docs/sample.md
-      - page: Installation
-        path: ./docs/installation.md
+  
+  - section: Starting Guide
+    contents:
+      - folder: ./docs/Starting
+        title: Starting
+
+  - section: API
+    contents:
+      - folder: ./docs/API
+        title: API
 colors:
   accentPrimary: '#ffffff'
   background: '#000000'

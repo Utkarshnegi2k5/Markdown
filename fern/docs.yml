@@ -61,5 +61,5 @@ footer-links:
   x: https://x.com/monocld
 
 colors:
-  accentPrimary: '#172569'
-  background: '#000000'
+  accentPrimary: '#ffffff'
+  background: '#172569'

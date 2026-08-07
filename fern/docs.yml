@@ -22,17 +22,31 @@ navigation:
     contents:
       - page: Home
         path: ./docs/index.mdx
+        tab: getting-started
   
   - section: Starting Guide
     contents:
       - folder: ./docs/Starting
         title: Starting
-
+        tab: getting-started
+ 
+  - section: Authentication
+    contents:
+      - folder: ./docs/Authentication
+        title: Authentication Methods
+        tab: authenticate
+ 
+  - section: User Management
+    contents:
+      - folder: ./docs/Users
+        title: User Management
+        tab: manage-users
+ 
   - section: API
     contents:
       - folder: ./docs/API
-        title: API
-
+        title: API Reference
+        tab: api-reference
 logo: 
   href: https://www.monocloud.com/
   dark: .\Customize\Assets\Image\images.jpg

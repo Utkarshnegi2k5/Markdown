@@ -1,9 +1,6 @@
 instances:
   - url: https://markdown-968565.docs.buildwithfern.com
 
-css:
-  - Customize\Style\Gradient.css
-
 title: Mark 907872 | Documentation
 navigation:
   - section: Introduction
@@ -27,6 +24,17 @@ logo:
   light: .\Customize\Assets\Image\images.jpg  
   right-text: monocloud
   height: 30
+
+navbar-links:
+  - type: minimal
+    text: Sign Up
+    href: https://example.com/support
+    target: _blank
+    
+  - type: filled
+    text: Login
+    href: https://example.com/login
+    rounded: false
 
 footer-links:
   github: https://github.com/monocloud

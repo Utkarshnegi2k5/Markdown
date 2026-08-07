@@ -20,8 +20,8 @@ navigation:
 
 logo: 
   href: https://example.com
-  dark: ./Image/images.jpg
-  light: ./Image/image.jpg  
+  dark: .\Image\images.jpg
+  light: .\Image\images.jpg  
   right-text: Markdown
   height: 30
 

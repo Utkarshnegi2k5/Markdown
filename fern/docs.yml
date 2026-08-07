@@ -2,6 +2,21 @@ instances:
   - url: https://markdown-968565.docs.buildwithfern.com
 
 title: Mark 907872 | Documentation
+
+tabs:
+  getting-started:
+    display-name: Get Started
+    icon: fa-solid fa-rocket
+  authenticate:
+    display-name: Authenticate
+    icon: fa-solid fa-lock
+  manage-users:
+    display-name: Manage Users
+    icon: fa-solid fa-users
+  api-reference:
+    display-name: API Reference
+    icon: fa-solid fa-code
+
 navigation:
   - section: Introduction
     contents:

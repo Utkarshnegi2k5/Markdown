@@ -20,8 +20,8 @@ navigation:
 
 logo: 
   href: https://www.monocloud.com/
-  dark: .\docs\Customize\Assets\Image\images.jpg
-  light: .\docs\Customize\Assets\Image\images.jpg  
+  dark: .\Customize\Assets\Image\images.jpg
+  light: .\Customize\Assets\Image\images.jpg  
   right-text: monocloud
   height: 30
 

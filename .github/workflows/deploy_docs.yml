@@ -17,9 +17,6 @@ jobs:
         with:
           node-version: 'lts/*'
 
-      - name: fern upgrade
-        run: fern upgrade
-
       - name: Install Fern CLI
         run: npm install -g fern-api
       

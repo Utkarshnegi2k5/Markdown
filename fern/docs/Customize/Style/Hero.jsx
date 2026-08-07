@@ -13,7 +13,7 @@ export default function Hero() {
       <h1
         style={{
           fontSize: "48px",
-          marginBottom: "15px",
+          marginBottom: "16px",
         }}
       >
         Mono Cloud
@@ -31,11 +31,12 @@ export default function Hero() {
       <button
         style={{
           marginTop: "25px",
-          padding: "12px 28px",
+          padding: "12px 30px",
           borderRadius: "25px",
           border: "none",
-          background: "white",
+          background: "#ffffff",
           color: "#0066ff",
+          fontSize: "16px",
           fontWeight: "600",
           cursor: "pointer",
         }}

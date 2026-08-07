@@ -1,11 +1,3 @@
-/* Mono Cloud Custom Theme */
-
-body {
-  background: #000000;
-  position: relative;
-}
-
-/* Top center blue glow */
 body::before {
   content: "";
   position: fixed;
@@ -19,8 +11,8 @@ body::before {
 
   background: radial-gradient(
     circle,
-    rgba(0, 140, 255, 0.55) 0%,
-    rgba(0, 90, 255, 0.25) 35%,
+    rgba(0, 60, 255, 0.65) 0%,
+    rgba(0, 30, 180, 0.35) 35%,
     transparent 70%
   );
 

@@ -6,7 +6,7 @@ navigation:
   - section: Introduction
     contents:
       - page: Home
-        path: ./docs/index.md
+        path: ./docs/index.mdx
   
   - section: Starting Guide
     contents:

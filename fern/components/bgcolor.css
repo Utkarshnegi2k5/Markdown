@@ -1,9 +1,9 @@
-main {
+body {
   position: relative;
   background: #000000;
 }
 
-main::before {
+body::before {
   content: "";
   position: fixed;
   top: 0;

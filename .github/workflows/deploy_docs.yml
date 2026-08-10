@@ -19,9 +19,9 @@ jobs:
 
       - name: Install Fern CLI
         run: npm install -g fern-api
-        
-      - name: Fern upgrade
-        run: fern upgrade
+
+      - name: Check Fern version
+        run: fern --version
       
       - name: Deploy Docs
         run: fern generate --docs

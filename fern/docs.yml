@@ -118,9 +118,7 @@ navigation:
 theme:
   tabs:
     placement: header
-    alignment: left
-    style: default
-
+    
 logo: 
   href: https://www.monocloud.com/
   dark: .\Customize\Assets\Image\image2.png

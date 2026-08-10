@@ -115,10 +115,9 @@ navigation:
             title: API
 
 # Put tabs in the top header
-theme:
-  tabs:
-    placement: header
-    
+layout:
+  tabs-placement: header
+
 logo: 
   href: https://www.monocloud.com/
   dark: .\Customize\Assets\Image\image2.png

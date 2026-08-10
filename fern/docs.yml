@@ -116,9 +116,8 @@ navigation:
 
 # Put tabs in the top header
 theme:
-  tabs:
-    placement: header
-    alignment: left
+  tabs: header
+
 
 logo: 
   href: https://www.monocloud.com/

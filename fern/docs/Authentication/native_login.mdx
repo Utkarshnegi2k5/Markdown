@@ -1,0 +1,83 @@
+# Native Login
+
+A basic native login form using email and password authentication.
+
+## Login
+
+<form>
+  <label htmlFor="email">Email</label>
+  <input
+    id="email"
+    name="email"
+    type="email"
+    placeholder="you@example.com"
+    required
+  />
+
+<label htmlFor="password">Password</label> <input
+ id="password"
+ name="password"
+ type="password"
+ placeholder="Enter your password"
+ required
+/>
+
+  <button type="submit">
+    Sign in
+  </button>
+</form>
+
+Don't have an account? **Sign up**
+
+Forgot your password? **Reset password**
+
+## Authentication
+
+The login request should send the user's credentials to your authentication endpoint:
+
+```js
+const response = await fetch("/api/auth/login", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    email,
+    password,
+  }),
+});
+
+const data = await response.json();
+
+if (response.ok) {
+  // User authenticated successfully
+  console.log("Logged in:", data);
+} else {
+  // Authentication failed
+  console.error(data.message);
+}
+```
+
+### Example API response
+
+Successful authentication:
+
+```json
+{
+  "success": true,
+  "user": {
+    "id": "123",
+    "email": "user@example.com"
+  },
+  "token": "your-auth-token"
+}
+```
+
+Failed authentication:
+
+```json
+{
+  "success": false,
+  "message": "Invalid email or password"
+}
+```

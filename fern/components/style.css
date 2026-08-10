@@ -3,9 +3,23 @@
 
   background-image: radial-gradient(
     ellipse 65% 40% at 50% 0%,
-    rgba(18, 96, 212, 0.8) 0%,
+    rgba(21, 68, 138, 0.8) 0%,
     rgba(0, 70, 180, 0.45) 30%,
-    rgba(0, 25, 70, 0.2) 55%,
-    #000000 100%
+    rgba(6, 77, 209, 0.2) 55%,
+    #010411 100%
   );
+}
+.fern-sidebar-heading {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.fern-sidebar-link-title-inner {
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.fern-sidebar-link:hover .fern-sidebar-link-title-inner {
+  color: #38bdf8 !important;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
 }

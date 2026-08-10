@@ -8,26 +8,123 @@ experimental:
 css: .\components\style.css
 
 title: Mark 907872 | Documentation
-navigation:
-  - section: Introduction
-    contents:
-      - page: Home
-        path: ./docs/index.mdx
-  
-  - section: Starting Guide
-    contents:
-      - folder: ./docs/Starting
-        title: Starting
 
-  - section: API
-    contents:
-      - folder: ./docs/API
-        title: API
+tabs:
+  getting-started:
+    display-name: Get Started
+    icon: fa-solid fa-rocket
+
+  api:
+    display-name: API
+    icon: fa-solid fa-code
+  
+  authentication:
+    display-name: Authentication
+    icon: fa-solid fa-lock
+
+  manage-user:
+    display-name: Manage User
+    icon: fa-solid fa-users
+
+  customize:
+    display-name: Customize
+    icon: fa-solid fa-sliders
+
+  secure:
+    display-name: Secure
+    icon: fa-solid fa-shield-halved
+
+  deploy-monitor:
+    display-name: Deploy & Monitor
+    icon: fa-solid fa-chart-line
+
+navigation:
+  
+  - tab: getting-started
+    layout:
+      - section: Introduction
+        contents:
+          - page: Home
+            path: ./docs/index.mdx
+
+      - section: Starting Guide
+        contents:
+          - folder: ./docs/Starting
+            title: Starting
+
+  - tab: api
+    layout:
+      - section: API
+        contents:
+          - folder: ./docs/API
+            title: API
+  
+  - tab: authentication
+    layout:
+      - section: Add login
+        contents:
+          - folder: ./docs/Authentication
+            title: Native login
+      - section: API
+        contents:
+          - folder: ./docs/API
+            title: API
+
+  - tab: manage-user
+    layout:
+      - section: Add login
+        contents:
+          - folder: ./docs/Authentication
+            title: Native login
+      - section: API
+        contents:
+          - folder: ./docs/API
+            title: API
+
+  - tab: customize
+    layout:
+      - section: Add login
+        contents:
+          - folder: ./docs/Authentication
+            title: Native login
+      - section: API
+        contents:
+          - folder: ./docs/API
+            title: API
+
+  - tab: secure
+    layout:
+      - section: Add login
+        contents:
+          - folder: ./docs/Authentication
+            title: Native login
+      - section: API
+        contents:
+          - folder: ./docs/API
+            title: API
+
+  - tab: deploy-monitor
+    layout:
+      - section: Add login
+        contents:
+          - folder: ./docs/Authentication
+            title: Native login
+      - section: API
+        contents:
+          - folder: ./docs/API
+            title: API
+
+# Put tabs in the top header
+theme:
+  tabs:
+    placement: header
+    alignment: left
+    style: default
 
 logo: 
   href: https://www.monocloud.com/
-  dark: .\Customize\Assets\Image\images.jpg
-  light: .\Customize\Assets\Image\images.jpg  
+  dark: .\Customize\Assets\Image\image2.png
+  light: .\Customize\Assets\Image\image2.png 
   right-text: monocloud
   height: 30
 
@@ -56,7 +153,6 @@ navbar-links:
       - text: Tutorials
         href: https://example.com/tutorials
         icon: fa-regular fa-graduation-cap
- 
 
 footer-links:
   github: https://github.com/monocloud

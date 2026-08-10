@@ -1,0 +1,11 @@
+.fern-background-image {
+  background-color: #000000;
+
+  background-image: radial-gradient(
+    ellipse 65% 40% at 50% 0%,
+    rgba(18, 96, 212, 0.8) 0%,
+    rgba(0, 70, 180, 0.45) 30%,
+    rgba(0, 25, 70, 0.2) 55%,
+    #000000 100%
+  );
+}

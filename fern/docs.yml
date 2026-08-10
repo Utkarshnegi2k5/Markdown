@@ -5,6 +5,8 @@ experimental:
   mdx-components: 
     - ./components
 
+css: .\components\style.css
+
 title: Mark 907872 | Documentation
 navigation:
   - section: Introduction

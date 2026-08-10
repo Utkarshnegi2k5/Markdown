@@ -1,5 +1,5 @@
 instances:
-  - url: https://markdown-968565.docs.buildwithfern.com
+  - url: markdown-968565.docs.buildwithfern.com
 
 experimental:
   mdx-components: 

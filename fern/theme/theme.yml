@@ -1,0 +1,43 @@
+css: ./assets/components/style.css
+theme:
+  tabs:
+    placement: header
+    alignment: left
+    style: default
+logo:
+  href: https://www.monocloud.com/
+  dark: ./assets/Customize/Assets/Image/image2.png
+  light: ./assets/Customize/Assets/Image/image2.png
+  right-text: monocloud
+  height: 30
+navbar-links:
+  - type: minimal
+    text: Sign In
+    href: >-
+      https://login.us.monocloud.com/ui/login?auth_id=1607978C7B41728A0E81CA38C342747545FC633888A280811738148E292B5AA2
+    rounded: false
+  - type: minimal
+    text: Sign Up
+    href: >-
+      https://login.us.monocloud.com/ui/signup?auth_id=C0FFE732B1F7AD6F3332F9F9672CD3D2099DB685A7CA8D58DF871E42A98E124F
+    target: _blank
+  - type: dropdown
+    text: Resources
+    icon: fa-solid fa-book
+    links:
+      - text: Documentation
+        href: https://example.com/docs
+        icon: fa-regular fa-file-lines
+      - text: API Reference
+        href: https://example.com/api
+        target: _blank
+        icon: fa-regular fa-code
+      - text: Tutorials
+        href: https://example.com/tutorials
+        icon: fa-regular fa-graduation-cap
+footer-links:
+  github: https://github.com/monocloud
+  x: https://x.com/monocld
+colors:
+  accentPrimary: '#ffffff'
+  background: '#000000'

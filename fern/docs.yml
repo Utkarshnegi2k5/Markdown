@@ -7,7 +7,9 @@ settings:
 experimental:
   mdx-components: 
     - ./components
-
+  external-sitemaps:
+    - https://devdocs.io/
+    
 css: .\components\style.css
 
 title: Mark 907872 | Documentation

@@ -43,9 +43,9 @@ tabs:
     
 theme:
   tabs:
+    style: bubble
+    alignment: center
     placement: header
-    alignment: left
-    style: default
 
 landing-page: 
   page: Home 

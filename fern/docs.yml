@@ -40,6 +40,12 @@ tabs:
   deploy-monitor:
     display-name: Deploy & Monitor
     icon: fa-solid fa-chart-line
+    
+theme:
+  tabs:
+    placement: header
+    alignment: left
+    style: default
 
 landing-page: 
   page: Home 
@@ -123,11 +129,7 @@ navigation:
             title: API
 
 # Put tabs in the top header
-theme:
-  tabs:
-    placement: header
-    alignment: left
-    style: default
+
 
 logo: 
   href: /

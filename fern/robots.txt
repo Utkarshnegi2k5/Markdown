@@ -1,0 +1,5 @@
+# Allow search engines and documentation crawlers
+User-Agent: *
+Allow: /
+
+Sitemap: https://markdown-968565.docs.buildwithfern.com/sitemap.xml

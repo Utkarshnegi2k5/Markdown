@@ -1,0 +1,1 @@
+console.log("MonoCloud custom JS loaded");

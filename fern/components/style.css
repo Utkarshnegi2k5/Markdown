@@ -9,6 +9,13 @@
     #010411 100%
   );
 }
+
+#fern-header {
+  background: rgba(0, 0, 0, 0.35) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
 .fern-sidebar-heading {
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.25);

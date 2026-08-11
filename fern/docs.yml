@@ -10,7 +10,12 @@ experimental:
   external-sitemaps:
     - https://devdocs.io/
 
+agents:
+  robots-txt: ./robots.txt
+
+
 css: .\components\style.css
+js: ./custom.js
 
 title: Mark 907872 | Documentation
 

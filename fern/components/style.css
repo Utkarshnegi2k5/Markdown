@@ -23,3 +23,11 @@
   color: #38bdf8 !important;
   text-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
 }
+
+.fern-header-tabs [data-state="active"]::after {
+  backdrop-filter: blur(0.5rem);
+  background-color: transparent;
+  display: none !important;
+  content: none !important;
+  font-weight: 0 !important;
+}

@@ -1,5 +1,5 @@
 instances:
-  - url: markdown-968565.docs.buildwithfern.com
+  - url: https://markdown-968565.docs.buildwithfern.com
 
 experimental:
   mdx-components: 
@@ -38,13 +38,18 @@ tabs:
     display-name: Deploy & Monitor
     icon: fa-solid fa-chart-line
 
+landing-page: 
+  page: Home 
+  path: ./docs/home.mdx 
+  slug: /welcome
+
 navigation:
-  
+
   - tab: getting-started
     layout:
       - section: Introduction
         contents:
-          - page: Home
+          - page: Start
             path: ./docs/index.mdx
 
       - section: Starting Guide
@@ -118,14 +123,14 @@ navigation:
 theme:
   tabs:
     placement: header
-
-
+    alignment: left
+    style: default
 
 logo: 
-  href: https://www.monocloud.com/
-  dark: .\Customize\Assets\Image\image2.png
-  light: .\Customize\Assets\Image\image2.png 
-  right-text: monocloud
+  href: /
+  dark: .\Assets\image2.png
+  light: .\Assets\image2.png 
+  right-text: Monocloud Docs
   height: 30
 
 navbar-links:

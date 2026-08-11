@@ -3,13 +3,13 @@ import React from 'react';
 export default function LandingPage() {
   const documentationCards = [
     {
-      src: '../Assets/images.png',
+      icon: '📚',
       title: 'Documentation',
       description: 'Learn how to use MonoCloud',
       href: '/get-started',
     },
     {
-      src: '../Customize/Assets/Image/images.png',
+      icon: '⚙️',
       title: 'API References',
       description: 'Complete API documentation',
       href: '/api',
@@ -83,18 +83,7 @@ export default function LandingPage() {
                 e.currentTarget.style.borderColor = '#333';
               }}
             >
-              {/* Display image or icon */}
-              <div style={{ marginBottom: '1rem', display: 'flex', justifyContent: 'center' }}>
-                {card.src ? (
-                  <img 
-                    src={card.src} 
-                    alt={card.title}
-                    style={{ height: '80px', width: 'auto', objectFit: 'contain' }}
-                  />
-                ) : (
-                  <div style={{ fontSize: '2.5rem' }}>{card.icon}</div>
-                )}
-              </div>
+              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{card.icon}</div>
               <h3 style={{ marginBottom: '0.5rem' }}>{card.title}</h3>
               <p style={{ color: '#aaa' }}>{card.description}</p>
             </a>

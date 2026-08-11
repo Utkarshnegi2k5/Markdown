@@ -1,6 +1,9 @@
 instances:
   - url: https://markdown-968565.docs.buildwithfern.com
 
+settings:
+  disable-analytics: true
+  
 experimental:
   mdx-components: 
     - ./components
@@ -120,11 +123,11 @@ navigation:
             title: API
 
 # Put tabs in the top header
-theme:
-  tabs:
-    placement: header
-    alignment: left
-    style: default
+# theme:
+#   tabs:
+#     placement: header
+#     alignment: left
+#     style: default
 
 logo: 
   href: /

@@ -1,5 +1,8 @@
-# Allow search engines and documentation crawlers
 User-Agent: *
 Allow: /
 
 Sitemap: https://markdown-968565.docs.buildwithfern.com/sitemap.xml
+
+# Fern-managed routes — automatically disallowed
+User-Agent: *
+Disallow: /api/fern-docs/

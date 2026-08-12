@@ -11,7 +11,7 @@ experimental:
   mdx-components: 
     - ./components
   external-sitemaps:
-    - https://buildwithfern.com/sitemap.xml
+    #- https://buildwithfern.com/sitemap.xml
     - https://www.monocloud.com/sitemap.xml
 
 agents:

@@ -5,7 +5,7 @@ settings:
   disable-analytics: true
 
   search-text: "Search documentation..."
-  disable-search: false
+  disable-search: true
 
 experimental:
   mdx-components: 
@@ -18,7 +18,11 @@ agents:
 
 
 css: .\components\style.css
-js: ./custom.js
+
+js:
+  - url: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+    strategy: beforeInteractive
+  - ./custom.js
 
 title: Mark 907872 | Documentation
 

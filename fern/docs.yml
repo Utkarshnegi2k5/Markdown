@@ -10,11 +10,11 @@ settings:
 experimental:
   mdx-components: 
     - ./components
+  external-sitemaps:
+    - https://buildwithfern.com/sitemap.xml
 
 agents:
   robots-txt: ./robots.txt
-  external-sitemaps:
-    - https://buildwithfern.com/sitemap.xml
 
 
 css: .\components\style.css

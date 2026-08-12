@@ -3,6 +3,7 @@ instances:
 
 settings:
   disable-analytics: true
+  disable-search: true
   
 experimental:
   mdx-components: 

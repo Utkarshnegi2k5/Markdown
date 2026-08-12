@@ -3,7 +3,9 @@ instances:
 
 settings:
   disable-analytics: true
-  #disable-search: true
+
+  search-text: "Search documentation..."
+  disable-search: false
 
 experimental:
   mdx-components: 

@@ -20,10 +20,10 @@ agents:
 
 css: .\components\style.css
 
-# js:
-#   - url: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
-#     strategy: beforeInteractive
-#   - ./custom.js
+js:
+  - url: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+    strategy: beforeInteractive
+  - ./custom.js
 
 title: Mark 907872 | Documentation
 

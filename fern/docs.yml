@@ -12,6 +12,7 @@ experimental:
     - ./components
   external-sitemaps:
     - https://buildwithfern.com/sitemap.xml
+    - https://www.monocloud.com/sitemap.xml
 
 agents:
   robots-txt: ./robots.txt

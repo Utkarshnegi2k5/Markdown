@@ -1,5 +1,6 @@
 import { SearchModal } from '@fern-api/search-widget';
 import '@fern-api/search-widget/styles';
+import './style.css';
 
 function App() {
   return (

@@ -13,12 +13,11 @@ experimental:
 
 agents:
   robots-txt: ./robots.txt
+  external-sitemaps:
+    - https://buildwithfern.com/sitemap.xml
 
 
-css: 
-  - .\components\style.css
-  - ./docsearch-integration.css
-  
+css: .\components\style.css
 js: ./custom.js
 
 title: Mark 907872 | Documentation

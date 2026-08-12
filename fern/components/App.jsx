@@ -3,11 +3,12 @@ import '@fern-api/search-widget/styles';
 
 function App() {
   return (
-    <SearchModal
-      domain="https://markdown-968565.docs.buildwithfern.com/"
-      lang="en"
-    >
-      Search Docs
+        <SearchModal
+            domain="https://markdown-968565.docs.buildwithfern.com/"
+            lang="en"
+            className="my-search-button"
+        >
+    Search Docs
     </SearchModal>
   );
 }

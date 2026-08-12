@@ -4,7 +4,7 @@ import '@fern-api/search-widget/styles';
 function App() {
   return (
     <SearchModal
-      domain="https://www.monocloud.com/"
+      domain="https://markdown-968565.docs.buildwithfern.com/"
       lang="en"
     >
       Search Docs

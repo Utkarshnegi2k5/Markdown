@@ -15,7 +15,10 @@ agents:
   robots-txt: ./robots.txt
 
 
-css: .\components\style.css
+css: 
+  - .\components\style.css
+  - ./docsearch-integration.css
+  
 js: ./custom.js
 
 title: Mark 907872 | Documentation

@@ -38,3 +38,18 @@
   content: none !important;
   font-weight: 0 !important;
 }
+
+
+
+/* DocSearch styling */
+.DocSearch {
+  --docsearch-primary-color: #1e90ff;
+  --docsearch-highlight-color: #ffd700;
+  --docsearch-searchbox-background: #f5f5f5;
+  --docsearch-text-color: #000;
+}
+
+/* Override Fern's search styling */
+#docsearch {
+  width: 100%;
+}

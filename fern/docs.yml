@@ -4,12 +4,10 @@ instances:
 settings:
   disable-analytics: true
   disable-search: true
-  
+
 experimental:
   mdx-components: 
     - ./components
-  external-sitemaps:
-    - https://devdocs.io/
 
 agents:
   robots-txt: ./robots.txt

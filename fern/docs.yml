@@ -10,9 +10,9 @@ settings:
 experimental:
   mdx-components: 
     - ./components
-  external-sitemaps:
-    #- https://buildwithfern.com/sitemap.xml
-    - https://www.monocloud.com/sitemap.xml
+  # external-sitemaps:
+  #   #- https://buildwithfern.com/sitemap.xml
+  #   - https://www.monocloud.com/sitemap.xml
 
 agents:
   robots-txt: ./robots.txt
@@ -21,9 +21,7 @@ agents:
 css: .\components\style.css
 
 js:
-  - url: https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
-    strategy: beforeInteractive
-  - ./custom.js
+  - .\components\AlgoliaSearch.js
 
 title: Mark 907872 | Documentation
 

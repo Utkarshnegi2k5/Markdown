@@ -82,10 +82,12 @@
 
 /* Search icon */
 #custom-docsearch .DocSearch-Search-Icon {
+  background: transparent !important;
   color: #ffffff !important;
 }
 
 /* Keyboard shortcut */
 #custom-docsearch .DocSearch-Button-Key {
+  background: transparent !important;
   color: #ffffff !important;
 }

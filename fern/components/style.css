@@ -49,3 +49,20 @@
   padding: 10px 16px;
   cursor: pointer;
 }
+
+/* Hide Fern's disabled search */
+#fern-search-button {
+  display: none !important;
+}
+
+/* Position our Algolia search where Fern's search was */
+#custom-docsearch {
+  width: 100%;
+  max-width: 640px;
+}
+
+#custom-docsearch .DocSearch {
+  width: 100%;
+  height: 36px;
+  margin: 0;
+}

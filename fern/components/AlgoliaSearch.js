@@ -31,12 +31,18 @@
     container.id = "custom-docsearch";
 
     // Add the DocSearch container to Fern's header
-    const header = document.querySelector("header");
+    const fernSearch = document.querySelector("#fern-search-button");
 
-    if (header) {
-      header.appendChild(container);
+    if (fernSearch) {
+      fernSearch.parentElement.replaceChild(container, fernSearch);
     } else {
-      document.body.prepend(container);
+      const header = document.querySelector("header");
+
+      if (header) {
+        header.appendChild(container);
+      } else {
+        document.body.prepend(container);
+      }
     }
 
     docsearch({

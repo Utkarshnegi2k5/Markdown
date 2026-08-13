@@ -5,7 +5,7 @@ settings:
   disable-analytics: true
 
   search-text: "Search documentation..."
-  disable-search: false
+  disable-search: true
 
 experimental:
   mdx-components: 

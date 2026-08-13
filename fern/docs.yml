@@ -18,8 +18,9 @@ agents:
   robots-txt: ./robots.txt
 
 
-css: .\components\style.css
-
+css: 
+  - .\components\style.css
+  - .\components\algolia.css
 js:
   - .\components\AlgoliaSearch.js
 

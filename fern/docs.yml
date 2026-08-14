@@ -55,11 +55,12 @@ tabs:
     display-name: Deploy & Monitor
     icon: fa-solid fa-chart-line
     
-# theme:
-#   tabs:
-#     style: bubble
-#     alignment: center
-#     placement: header
+theme:
+  tabs: default
+
+layout:
+  tabs-placement: header
+
 
 landing-page: 
   page: Home 

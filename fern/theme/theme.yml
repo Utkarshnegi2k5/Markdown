@@ -1,9 +1,10 @@
 css: ./assets/components/style.css
 theme:
-  tabs:
-    placement: header
-    alignment: left
-    style: default
+  tabs: default
+
+layout:
+  tabs-placement: header
+
 logo:
   href: https://www.monocloud.com/
   dark: ./assets/Customize/Assets/Image/image2.png

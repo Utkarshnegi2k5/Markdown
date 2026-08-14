@@ -25,3 +25,5 @@ jobs:
       
       - name: Deploy Docs
         run: fern generate --docs
+        env:
+          FERN_TOKEN: ${{ secrets.FERN_TOKEN }}

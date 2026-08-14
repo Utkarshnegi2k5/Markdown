@@ -113,6 +113,8 @@ navigation:
         contents:
           - folder: ./docs/Deploy_Monitor/Monitor
             title: Monitor
+          - page: temp
+            path: ./docs/pages/deploy-monitor/monitor/temp.mdx
       - section: Deploy
         contents:
           - section: Deploy

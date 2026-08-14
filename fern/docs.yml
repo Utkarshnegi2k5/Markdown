@@ -79,10 +79,16 @@ navigation:
         contents:
           - folder: .\docs\Manage user
             title: User Mangagment
+          - page: test
+            path: ./docs/pages/manage-user/managment/test.mdx
       - section: API
         contents:
           - folder: ./docs/API
             title: API
+      - section: managment
+        contents:
+          - page: user
+            path: ./docs/pages/manage-user/managment/user.mdx
   - tab: customize
     layout:
       - section: Add login
@@ -109,6 +115,8 @@ navigation:
         contents:
           - folder: ./docs/Deploy_Monitor/Monitor
             title: Monitor
+          - page: testing
+            path: ./docs/pages/deploy-monitor/monitor/testing.mdx
       - section: Deploy
         contents:
           - section: Deploy

@@ -62,7 +62,6 @@ layout:
   tabs-placement: header
   searchbar-placement: header
 
-
 landing-page: 
   page: Home 
   path: ./docs/home.mdx 

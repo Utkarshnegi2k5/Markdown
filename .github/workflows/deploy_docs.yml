@@ -23,6 +23,9 @@ jobs:
       - name: Check Fern version
         run: fern --version
       
+      - name: Upgrade Fern
+        run: fern upgrade 
+
       - name: Deploy Docs
         run: fern generate --docs
         env:

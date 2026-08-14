@@ -107,8 +107,10 @@ navigation:
     layout:
       - section: Monitor
         contents:
-          - folder: ./docs/Deploy_Monitor/Monitor
+          - folder: ./docs/Deploy Monitor
             title: Monitor
+          - page: Check Stauts
+            path: ./docs/pages/deploy-monitor/monitor/check-stauts.mdx
       - section: Deploy
         contents:
           - section: Deploy

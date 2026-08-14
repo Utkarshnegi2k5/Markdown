@@ -107,7 +107,7 @@ navigation:
     layout:
       - section: Monitor
         contents:
-          - folder: ./docs/Deploy_Monitor/Monitor
+          - folder: ./docs/Deploy Monitor
             title: Monitor
       - section: Deploy
         contents:
@@ -115,6 +115,8 @@ navigation:
             contents:
               - page: Deployment option
                 path: ./docs/Deploy_Monitor/Deploy/deployment-option.mdx
+          - page: test
+            path: ./docs/pages/deploy-monitor/deploy/test.mdx
 logo:
   href: /
   dark: .\Assets\image2.png

@@ -102,10 +102,10 @@ navigation:
 
   - tab: manage-user
     layout:
-      - section: Add login
+      - section: Managment
         contents:
-          - folder: ./docs/Authentication
-            title: Native login
+          - folder: .\docs\Manage user
+            title: User Mangagment
       - section: API
         contents:
           - folder: ./docs/API

@@ -1,93 +1,68 @@
 instances:
   - url: https://markdown-968565.docs.buildwithfern.com
-
 settings:
   disable-analytics: true
-
-  search-text: "Search documentation..."
+  search-text: Search documentation...
   disable-search: true
-
 experimental:
-  mdx-components: 
+  mdx-components:
     - ./components
-  # external-sitemaps:
-  #   #- https://buildwithfern.com/sitemap.xml
-  #   - https://www.monocloud.com/sitemap.xml
-
 agents:
   robots-txt: ./robots.txt
-
-
-css: 
+css:
   - .\components\style.css
   - .\components\algolia.css
 js:
   - .\components\AlgoliaSearch.js
-
 title: Mark 907872 | Documentation
-
 tabs:
   getting-started:
     display-name: Get Started
     icon: fa-solid fa-rocket
-
   api:
     display-name: API
     icon: fa-solid fa-code
-  
   authentication:
     display-name: Authentication
     icon: fa-solid fa-lock
-
   manage-user:
     display-name: Manage User
     icon: fa-solid fa-users
-
   customize:
     display-name: Customize
     icon: fa-solid fa-sliders
-
   secure:
     display-name: Secure
     icon: fa-solid fa-shield-halved
-
   deploy-monitor:
     display-name: Deploy & Monitor
     icon: fa-solid fa-chart-line
-    
 theme:
   tabs: default
-
 layout:
   tabs-placement: header
   searchbar-placement: header
-
-landing-page: 
-  page: Home 
-  path: ./docs/home.mdx 
+landing-page:
+  page: Home
+  path: ./docs/home.mdx
   slug: /welcome
-
 navigation:
-
   - tab: getting-started
     layout:
       - section: Introduction
         contents:
           - page: Start
             path: ./docs/index.mdx
-
       - section: Starting Guide
         contents:
           - folder: ./docs/Starting
             title: Starting
-
   - tab: api
     layout:
       - section: API
         contents:
           - folder: ./docs/API
             title: API
-  
   - tab: authentication
     layout:
       - section: Add login
@@ -98,7 +73,6 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: manage-user
     layout:
       - section: Managment
@@ -109,7 +83,6 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: customize
     layout:
       - section: Add login
@@ -120,7 +93,6 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: secure
     layout:
       - section: Add login
@@ -131,7 +103,6 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: deploy-monitor
     layout:
       - section: Add login
@@ -142,28 +113,21 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
-# Put tabs in the top header
-
-
-logo: 
+logo:
   href: /
   dark: .\Assets\image2.png
-  light: .\Assets\image2.png 
+  light: .\Assets\image2.png
   right-text: Monocloud Docs
   height: 30
-
 navbar-links:
   - type: minimal
     text: Sign In
     href: https://login.us.monocloud.com/ui/login?auth_id=1607978C7B41728A0E81CA38C342747545FC633888A280811738148E292B5AA2
     rounded: false
-    
   - type: minimal
     text: Sign Up
     href: https://login.us.monocloud.com/ui/signup?auth_id=C0FFE732B1F7AD6F3332F9F9672CD3D2099DB685A7CA8D58DF871E42A98E124F
     target: _blank
-  
   - type: dropdown
     text: Resources
     icon: fa-solid fa-book
@@ -178,11 +142,9 @@ navbar-links:
       - text: Tutorials
         href: https://example.com/tutorials
         icon: fa-regular fa-graduation-cap
-
 footer-links:
   github: https://github.com/monocloud
   x: https://x.com/monocld
-
 colors:
   accentPrimary: '#ffffff'
   background: '#000000'

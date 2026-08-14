@@ -1,25 +1,19 @@
 instances:
   - url: https://markdown-968565.docs.buildwithfern.com
-
 settings:
   disable-analytics: true
   search-text: Search documentation...
   disable-search: true
-
 experimental:
   mdx-components:
     - ./components
-
 agents:
   robots-txt: ./robots.txt
-
 css:
   - .\components\style.css
   - .\components\algolia.css
-
 js:
   - .\components\AlgoliaSearch.js
-
 title: Mark 907872 | Documentation
 tabs:
   getting-started:
@@ -43,19 +37,15 @@ tabs:
   deploy-monitor:
     display-name: Deploy & Monitor
     icon: fa-solid fa-chart-line
-
 theme:
   tabs: default
 layout:
   tabs-placement: header
   searchbar-placement: header
-
 landing-page:
   page: Home
   path: ./docs/home.mdx
   slug: /welcome
-
-
 navigation:
   - tab: getting-started
     layout:
@@ -67,14 +57,12 @@ navigation:
         contents:
           - folder: ./docs/Starting
             title: Starting
-
   - tab: api
     layout:
       - section: API
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: authentication
     layout:
       - section: Add login
@@ -85,7 +73,6 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: manage-user
     layout:
       - section: Managment
@@ -96,7 +83,6 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: customize
     layout:
       - section: Add login
@@ -107,7 +93,6 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: secure
     layout:
       - section: Add login
@@ -118,19 +103,18 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: deploy-monitor
     layout:
       - section: Monitor
         contents:
-          - folder: ./docs/Deploy_Monitor/Monitor
+          - folder: ./docs/Deploy Monitor
             title: Monitor
-
       - section: Deploy
         contents:
-          - folder: ./docs/Deploy_Monitor/Deploy
-            title: Deploy
-
+          - section: Deploy
+            contents:
+              - page: Deployment option
+                path: ./docs/Deploy_Monitor/Deploy/deployment-option.mdx
 logo:
   href: /
   dark: .\Assets\image2.png

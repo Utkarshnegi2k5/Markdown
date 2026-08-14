@@ -117,6 +117,10 @@ navigation:
             contents:
               - page: Deployment option
                 path: ./docs/Deploy_Monitor/Deploy/deployment-option.mdx
+      - section: Testing
+        contents:
+          - page: test
+            path: ./docs/pages/deploy-monitor/testing/test.mdx
 logo:
   href: /
   dark: .\Assets\image2.png

@@ -123,12 +123,12 @@ navigation:
     layout:
       - section: Monitor
         contents:
-          - folder: ./docs/Deploy Monitor/Monitor
+          - folder: ./docs/Deploy_Monitor/Monitor
             title: Monitor
 
       - section: Deploy
         contents:
-          - folder: ./docs/Deploy Monitor/Deploy
+          - folder: ./docs/Deploy_Monitor/Deploy
             title: Deploy
 
 logo:

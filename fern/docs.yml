@@ -121,11 +121,10 @@ navigation:
 
   - tab: deploy-monitor
     layout:
-      - section: Add login
+      - section: Monitor
         contents:
           - folder: ./docs/Deploy Monitor
-            title: Native login
-
+            title: Monitor
 
 logo:
   href: /

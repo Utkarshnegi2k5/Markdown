@@ -107,7 +107,7 @@ navigation:
     layout:
       - section: Monitor
         contents:
-          - folder: ./docs/Deploy Monitor
+          - folder: ./docs/Deploy_Monitor/Monitor
             title: Monitor
       - section: Deploy
         contents:

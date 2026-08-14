@@ -60,6 +60,7 @@ theme:
 
 layout:
   tabs-placement: header
+  searchbar-placement: header
 
 
 landing-page: 

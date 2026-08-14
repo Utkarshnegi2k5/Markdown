@@ -69,10 +69,6 @@ navigation:
         contents:
           - folder: ./docs/Authentication
             title: Native login
-          - page: testing
-            path: ./docs/pages/authentication/add-login/testing.mdx
-          - page: test2
-            path: ./docs/pages/authentication/add-login/test2.mdx
       - section: API
         contents:
           - folder: ./docs/API
@@ -113,8 +109,6 @@ navigation:
         contents:
           - folder: ./docs/Deploy_Monitor/Monitor
             title: Monitor
-          - page: temp
-            path: ./docs/pages/deploy-monitor/monitor/temp.mdx
       - section: Deploy
         contents:
           - section: Deploy

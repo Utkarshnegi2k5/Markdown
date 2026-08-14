@@ -1,30 +1,20 @@
 instances:
   - url: https://markdown-968565.docs.buildwithfern.com
-
-
 settings:
   disable-analytics: true
   search-text: Search documentation...
   disable-search: true
-
-
 experimental:
   mdx-components:
     - ./components
-
-
 agents:
   robots-txt: ./robots.txt
-
 css:
   - .\components\style.css
   - .\components\algolia.css
-
 js:
   - .\components\AlgoliaSearch.js
-
 title: Mark 907872 | Documentation
-
 tabs:
   getting-started:
     display-name: Get Started
@@ -47,21 +37,15 @@ tabs:
   deploy-monitor:
     display-name: Deploy & Monitor
     icon: fa-solid fa-chart-line
-
-
 theme:
   tabs: default
 layout:
   tabs-placement: header
   searchbar-placement: header
-
-
 landing-page:
   page: Home
   path: ./docs/home.mdx
   slug: /welcome
-
-
 navigation:
   - tab: getting-started
     layout:
@@ -73,36 +57,36 @@ navigation:
         contents:
           - folder: ./docs/Starting
             title: Starting
-
   - tab: api
     layout:
       - section: API
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: authentication
     layout:
       - section: Add login
         contents:
           - folder: ./docs/Authentication
             title: Native login
+          - page: testing
+            path: ./docs/pages/authentication/add-login/testing.mdx
+          - page: test2
+            path: ./docs/pages/authentication/add-login/test2.mdx
       - section: API
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: manage-user
     layout:
       - section: Managment
         contents:
-          - folder: ./docs/Manage user
+          - folder: .\docs\Manage user
             title: User Mangagment
       - section: API
         contents:
           - folder: ./docs/API
             title: API
-            
   - tab: customize
     layout:
       - section: Add login
@@ -113,7 +97,6 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: secure
     layout:
       - section: Add login
@@ -124,30 +107,24 @@ navigation:
         contents:
           - folder: ./docs/API
             title: API
-
   - tab: deploy-monitor
     layout:
       - section: Monitor
         contents:
           - folder: ./docs/Deploy_Monitor/Monitor
             title: Monitor
-            
       - section: Deploy
         contents:
           - section: Deploy
             contents:
               - page: Deployment option
                 path: ./docs/Deploy_Monitor/Deploy/deployment-option.mdx
-
-
 logo:
   href: /
   dark: .\Assets\image2.png
   light: .\Assets\image2.png
   right-text: Monocloud Docs
   height: 30
-
-
 navbar-links:
   - type: minimal
     text: Sign In
@@ -171,13 +148,9 @@ navbar-links:
       - text: Tutorials
         href: https://example.com/tutorials
         icon: fa-regular fa-graduation-cap
-
-        
 footer-links:
   github: https://github.com/monocloud
   x: https://x.com/monocld
-
-
 colors:
   accentPrimary: '#ffffff'
   background: '#000000'

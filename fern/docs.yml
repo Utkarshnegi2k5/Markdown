@@ -123,8 +123,13 @@ navigation:
     layout:
       - section: Monitor
         contents:
-          - folder: ./docs/Deploy Monitor
+          - folder: ./docs/Deploy Monitor/Monitor
             title: Monitor
+
+      - section: Deploy
+        contents:
+          - folder: ./docs/Deploy Monitor/Deploy
+            title: Deploy
 
 logo:
   href: /

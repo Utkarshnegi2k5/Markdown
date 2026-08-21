@@ -61,8 +61,7 @@ navigation:
     layout:
       - section: API
         contents:
-          - folder: ./docs/API
-            title: API
+          - api: API Reference
   - tab: authentication
     layout:
       - section: Add login

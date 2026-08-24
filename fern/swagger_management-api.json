@@ -1257,7 +1257,7 @@
             "API-Key": [ ]
           }
         ],
-        "x-badges": [
+        "x-fern-badges": [
           {
             "name": "ScaleX",
             "position": "before"

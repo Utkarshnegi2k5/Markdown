@@ -9010,7 +9010,7 @@
           "Users"
         ],
         "summary": "Revoke a session",
-        "description": "Revokes the specified user session, immediately terminating it and preventing further sign-in activity under that session.\n> Access to user session management endpoints requires an active Pro plan subscription. Existing tokens remain active unless the application enforces token-to-session binding.",
+        "description": "Revokes the specified user session, immediately terminating it and preventing further sign-in activity under that session.\n\n<Note>\n Access to user session management endpoints requires an active Pro plan subscription. Existing tokens remain active unless the application enforces token-to-session binding.\n</Note>",
         "operationId": "RevokeUserSession",
         "parameters": [
           {

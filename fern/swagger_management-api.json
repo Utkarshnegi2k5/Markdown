@@ -1257,7 +1257,7 @@
             "API-Key": [ ]
           }
         ],
-        "x-fern-product": "ScaleX",
+        "x-tier": "ScaleX",
         "x-codeSamples": [
           {
             "lang": "csharp",
@@ -1278,7 +1278,7 @@
         "summary": "Remove a application from a group",
         "description": "Removes the specified application from the group. After removal, the group will no longer grant access or permissions to this application.\n> Access to this endpoint requires an active ScaleX subscription.",
         "operationId": "RemoveGroupFromApplication",
-        "x-fern-product": "ScaleX",
+        "x-tier": "ScaleX",
         "parameters": [
           {
             "name": "client_id",

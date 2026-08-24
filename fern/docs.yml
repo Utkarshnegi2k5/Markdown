@@ -12,6 +12,7 @@ agents:
 css:
   - .\components\style.css
   - .\components\algolia.css
+  - .\components\message.css
 js:
   - .\components\AlgoliaSearch.js
 title: Mark 907872 | Documentation

@@ -1156,7 +1156,7 @@
           "Clients"
         ],
         "summary": "Assign a group to a application",
-        "description": "Associates a group with the application and enforces group-based access control — only members of this group are permitted to access the application.\n>[!note]\n> Access to this endpoint requires an active ScaleX subscription.",
+        "description": "Associates a group with the application and enforces group-based access control — only members of this group are permitted to access the application.\n\n<div class=\"note-box\"><strong>ℹ️ Note:</strong> Access to this endpoint requires an active ScaleX subscription.</div>",
         "operationId": "AssignGroupToApplication",
         "parameters": [
           {
@@ -5300,7 +5300,7 @@
           "Users"
         ],
         "summary": "Delete a user",
-        "description": "Permanently deletes the specified user.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified user.\n\n<div class=\"warning-box\"><strong>⚠️ Warning:</strong> This operation is irreversible.</div>",
         "operationId": "DeleteUser",
         "parameters": [
           {

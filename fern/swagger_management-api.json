@@ -1257,7 +1257,7 @@
             "API-Key": [ ]
           }
         ],
-        "x-fern-availability": "ScaleX",
+        "x-fern-availability": "beta",
         "x-codeSamples": [
           {
             "lang": "csharp",

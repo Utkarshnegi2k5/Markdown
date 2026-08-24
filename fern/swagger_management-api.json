@@ -1276,7 +1276,7 @@
           "Clients"
         ],
         "summary": "Remove a application from a group",
-        "description": "Removes the specified application from the group. After removal, the group will no longer grant access or permissions to this application.\n>[!note]\n> Access to this endpoint requires an active ScaleX subscription.",
+        "description": "Removes the specified application from the group. After removal, the group will no longer grant access or permissions to this application.\n> Access to this endpoint requires an active ScaleX subscription.",
         "operationId": "RemoveGroupFromApplication",
         "x-fern-availability": "beta",
         "parameters": [

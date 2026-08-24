@@ -1,5 +1,8 @@
 {
   "openapi": "3.1.1",
+  "variables": {
+    "NOTE": "<div class=\"note-box\"><strong>ℹ️ Note:</strong>"
+  },
   "info": {
     "title": "MonoCloud Management API",
     "description": "The MonoCloud Management API provides endpoints for configuring and managing identity infrastructure, including clients, protected resources, users, groups, security controls, cryptographic keys, mTLS configuration, and platform settings within the MonoCloud platform.",
@@ -462,7 +465,7 @@
           "Clients"
         ],
         "summary": "Delete a application",
-        "description": "Permanently deletes the specified application.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified application.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteApplication",
         "parameters": [
           {
@@ -850,7 +853,7 @@
           "Clients"
         ],
         "summary": "Delete a application secret",
-        "description": "Permanently deletes the specified application secret.\n>[!warning]\n> This operation is irreversible. Any applications using this secret will immediately fail authentication.",
+        "description": "Permanently deletes the specified application secret.\n\n<Warning>\n This operation is irreversible. Any applications using this secret will immediately fail authentication.\n</Warning>",
         "operationId": "DeleteApplicationSecret",
         "parameters": [
           {
@@ -1156,7 +1159,7 @@
           "Clients"
         ],
         "summary": "Assign a group to a application",
-        "description": "Associates a group with the application and enforces group-based access control — only members of this group are permitted to access the application.\n\n<div class=\"note-box\"><strong>ℹ️ Note:</strong> Access to this endpoint requires an active ScaleX subscription.</div>",
+        "description": "Associates a group with the application and enforces group-based access control — only members of this group are permitted to access the application.\n\n<Note>\nAccess to this endpoint requires an active ScaleX subscription.\n</Note>",
         "operationId": "AssignGroupToApplication",
         "parameters": [
           {
@@ -1951,7 +1954,7 @@
           "Resources"
         ],
         "summary": "Delete an API resource",
-        "description": "Permanently deletes the specified API resource and all API scopes defined for it.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified API resource and all API scopes defined for it.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteApiResource",
         "parameters": [
           {
@@ -2119,7 +2122,7 @@
           "Resources"
         ],
         "summary": "Create an API resource secret",
-        "description": "Creates a new secret credential for the API resource, used to authenticate the resource during token introspection.\n>[!note]\n> Access to the API secret creation endpoint requires an active ScaleX subscription.",
+        "description": "Creates a new secret credential for the API resource, used to authenticate the resource during token introspection.\n\n<Note>\n Access to the API secret creation endpoint requires an active ScaleX subscription.\n</Note>",
         "operationId": "CreateApiResourceSecret",
         "parameters": [
           {
@@ -2357,7 +2360,7 @@
           "Resources"
         ],
         "summary": "Delete an API resource secret",
-        "description": "Permanently deletes the specified API resource secret.\n>[!warning]\n> This operation is irreversible. Tokens presented to this API resource can no longer be introspected using this secret.",
+        "description": "Permanently deletes the specified API resource secret.\n\n<Warning>\n This operation is irreversible. Tokens presented to this API resource can no longer be introspected using this secret.\n</Warning>",
         "operationId": "DeleteApiResourceSecret",
         "parameters": [
           {
@@ -2909,7 +2912,7 @@
           "Resources"
         ],
         "summary": "Delete an API scope",
-        "description": "Permanently deletes the specified API scope from the API resource.\n>[!warning]\n> This operation is irreversible. Once deleted, clients will no longer be able to request or obtain access tokens containing this scope.",
+        "description": "Permanently deletes the specified API scope from the API resource.\n\n<Warning>\n This operation is irreversible. Once deleted, clients will no longer be able to request or obtain access tokens containing this scope.\n</Warning>",
         "operationId": "DeleteApiScope",
         "parameters": [
           {
@@ -3460,7 +3463,7 @@
           "Resources"
         ],
         "summary": "Delete a basic API access policy",
-        "description": "Permanently deletes the specified basic API access policy from the API resource.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified basic API access policy from the API resource.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteApiAccessBasicPolicy",
         "parameters": [
           {
@@ -3550,7 +3553,7 @@
           "Resources"
         ],
         "summary": "Convert a basic API access policy to an advanced policy",
-        "description": "Converts the specified basic API access policy into an advanced Cedar-authored policy in place. The policy ID is preserved, and the generated Cedar source becomes the starting point for further editing. Basic-only fields, such as clients and scopes, are discarded.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Converts the specified basic API access policy into an advanced Cedar-authored policy in place. The policy ID is preserved, and the generated Cedar source becomes the starting point for further editing. Basic-only fields, such as clients and scopes, are discarded.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "ConvertApiAccessBasicToAdvancedPolicy",
         "parameters": [
           {
@@ -3976,7 +3979,7 @@
           "Resources"
         ],
         "summary": "Delete an advanced API access policy",
-        "description": "Permanently deletes the specified advanced API access policy from the API resource.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified advanced API access policy from the API resource.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteApiAccessAdvancedPolicy",
         "parameters": [
           {
@@ -4456,7 +4459,7 @@
           "Resources"
         ],
         "summary": "Delete a scope",
-        "description": "Permanently deletes the specified identity scope.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified identity scope.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteScope",
         "parameters": [
           {
@@ -4815,7 +4818,7 @@
           "Resources"
         ],
         "summary": "Update a claim",
-        "description": "Applies a partial update to the specified claim. Only fields included in the request are updated.\n>[!note]\n> This operation applies only to custom claims. Built-in claims cannot be modified in order to preserve OpenID Connect compliance.",
+        "description": "Applies a partial update to the specified claim. Only fields included in the request are updated.\n\n<Note>\n This operation applies only to custom claims. Built-in claims cannot be modified in order to preserve OpenID Connect compliance.\n</Note>",
         "operationId": "PatchClaimResource",
         "parameters": [
           {
@@ -4926,7 +4929,7 @@
           "Resources"
         ],
         "summary": "Delete a claim",
-        "description": "Permanently deletes the specified claim.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified claim.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteClaimResource",
         "parameters": [
           {
@@ -5120,7 +5123,7 @@
           "Users"
         ],
         "summary": "Create a user",
-        "description": "Creates a new user using identifiers such as email, phone number, or username, with an optional password or imported password hash. This endpoint also supports migration scenarios by allowing administrators to preserve verification states and bypass password policies or identifier restrictions when required.\n>[!note]\n> Configured sign-up policies are enforced by default; however, this allows authorized requests to override them when permitted.",
+        "description": "Creates a new user using identifiers such as email, phone number, or username, with an optional password or imported password hash. This endpoint also supports migration scenarios by allowing administrators to preserve verification states and bypass password policies or identifier restrictions when required.\n\n<Note>\n Configured sign-up policies are enforced by default; however, this allows authorized requests to override them when permitted.\n</Note>",
         "operationId": "CreateUser",
         "requestBody": {
           "description": "The request payload used to create a user.",
@@ -5300,7 +5303,7 @@
           "Users"
         ],
         "summary": "Delete a user",
-        "description": "Permanently deletes the specified user.\n\n<div class=\"warning-box\"><strong>⚠️ Warning:</strong> This operation is irreversible.</div>",
+        "description": "Permanently deletes the specified user.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteUser",
         "parameters": [
           {
@@ -6023,7 +6026,7 @@
           "Users"
         ],
         "summary": "Remove an email address",
-        "description": "Removes the specified email address from the user’s account. Once removed, it is no longer available for authentication, verification or communication.\n>[!note]\n> Removing an email may affect flows that depend on it, such as password recovery or notification delivery.",
+        "description": "Removes the specified email address from the user’s account. Once removed, it is no longer available for authentication, verification or communication.\n\n<Note>\n Removing an email may affect flows that depend on it, such as password recovery or notification delivery.\n</Note>",
         "operationId": "RemoveEmail",
         "parameters": [
           {
@@ -6730,7 +6733,7 @@
           "Users"
         ],
         "summary": "Remove a phone number",
-        "description": "Removes the specified phone number from the user’s account. Once removed, it is no longer available for authentication, verification or communication.\n>[!note]\n> Removing a phone number may affect flows that depend on it, such as password recovery or notification delivery.",
+        "description": "Removes the specified phone number from the user’s account. Once removed, it is no longer available for authentication, verification or communication.\n\n<Note>\n Removing a phone number may affect flows that depend on it, such as password recovery or notification delivery.\n</Note>",
         "operationId": "RemovePhone",
         "parameters": [
           {
@@ -8040,7 +8043,7 @@
           "Users"
         ],
         "summary": "Retrieve user private data",
-        "description": "Retrieves the private data associated with the specified user.\n>[!note]\n> Private data contains sensitive or internal attributes intended only for trusted backend services. It should not be exposed directly to client applications or included in user-visible contexts.",
+        "description": "Retrieves the private data associated with the specified user.\n\n<Note>\n Private data contains sensitive or internal attributes intended only for trusted backend services. It should not be exposed directly to client applications or included in user-visible contexts.\n</Note>",
         "operationId": "GetPrivateData",
         "parameters": [
           {
@@ -8125,7 +8128,7 @@
           "Users"
         ],
         "summary": "Update user private data",
-        "description": "Applies a partial update to the private data associated with the specified user. Only fields included in the request are updated. Private data fields can be removed by sending a `null` value for the corresponding key.\n>[!warning]\n> Intended for sensitive or internal-use attributes. Avoid exposing these values to client applications. If surfaced via custom claims, include them only in tokens issued to trusted backend services to prevent accidental disclosure.",
+        "description": "Applies a partial update to the private data associated with the specified user. Only fields included in the request are updated. Private data fields can be removed by sending a `null` value for the corresponding key.\n\n<Warning>\n Intended for sensitive or internal-use attributes. Avoid exposing these values to client applications. If surfaced via custom claims, include them only in tokens issued to trusted backend services to prevent accidental disclosure.\n</Warning>",
         "operationId": "PatchPrivateData",
         "parameters": [
           {
@@ -8241,7 +8244,7 @@
           "Users"
         ],
         "summary": "Retrieve user public data",
-        "description": "Retrieves the public data associated with the specified user.\n>[!note]\n> Public data contains non-sensitive attributes that can be safely exposed to client applications and may be used to personalize user experiences.",
+        "description": "Retrieves the public data associated with the specified user.\n\n<Note>\n Public data contains non-sensitive attributes that can be safely exposed to client applications and may be used to personalize user experiences.\n</Note>",
         "operationId": "GetPublicData",
         "parameters": [
           {
@@ -8326,7 +8329,7 @@
           "Users"
         ],
         "summary": "Update user public data",
-        "description": "Applies a partial update to the public data associated with the specified user. Only fields included in the request are updated. Public data fields can be removed by sending a `null` value for the corresponding key.\n>[!warning]\n> Intended for non-sensitive attributes that may be safely exposed to client applications. When surfaced via custom claims, these values may appear in tokens issued to frontend or user-facing applications. Store only data that remains safe even if accessed through browser storage, logs, or debugging tools.",
+        "description": "Applies a partial update to the public data associated with the specified user. Only fields included in the request are updated. Public data fields can be removed by sending a `null` value for the corresponding key.\n\n<Warning>\n Intended for non-sensitive attributes that may be safely exposed to client applications. When surfaced via custom claims, these values may appear in tokens issued to frontend or user-facing applications. Store only data that remains safe even if accessed through browser storage, logs, or debugging tools.\n</Warning>",
         "operationId": "PatchPublicData",
         "parameters": [
           {
@@ -8714,7 +8717,7 @@
           "Users"
         ],
         "summary": "List user sessions",
-        "description": "Retrieves a paginated list of all active sessions for the specified user. Optional query parameters allow searching, filtering, and sorting the results.\n>[!note]\n> Access to user session management endpoints requires an active Pro plan subscription.",
+        "description": "Retrieves a paginated list of all active sessions for the specified user. Optional query parameters allow searching, filtering, and sorting the results.\n\n<Note>\n Access to user session management endpoints requires an active Pro plan subscription.\n</Note>",
         "operationId": "GetAllUserSessions",
         "parameters": [
           {
@@ -8891,7 +8894,7 @@
           "Users"
         ],
         "summary": "Retrieve a user session",
-        "description": "Retrieves detailed information about a specific session for the specified user.\n>[!note]\n> Access to user session management endpoints requires an active Pro plan subscription.",
+        "description": "Retrieves detailed information about a specific session for the specified user.\n\n<Note>\n Access to user session management endpoints requires an active Pro plan subscription.\n</Note>",
         "operationId": "FindUserSession",
         "parameters": [
           {
@@ -9809,7 +9812,7 @@
           "Users"
         ],
         "summary": "List client grants",
-        "description": "Retrieves a paginated list of client-specific grants for the specified user, including consent status and counts of issued refresh tokens, reference tokens, and authorization codes.\n>[!note]\n> Access to grant and token information endpoints requires an active Pro plan subscription.",
+        "description": "Retrieves a paginated list of client-specific grants for the specified user, including consent status and counts of issued refresh tokens, reference tokens, and authorization codes.\n\n<Note>\n Access to grant and token information endpoints requires an active Pro plan subscription.\n</Note>",
         "operationId": "GetAllUserClientGrants",
         "parameters": [
           {
@@ -9968,7 +9971,7 @@
           "Users"
         ],
         "summary": "List user consents",
-        "description": "Retrieves a paginated list of consents granted by the specified user. Each consent includes the application's approved scopes and associated metadata. Optional query parameters allow searching, filtering, and sorting the results.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Retrieves a paginated list of consents granted by the specified user. Each consent includes the application's approved scopes and associated metadata. Optional query parameters allow searching, filtering, and sorting the results.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "GetAllUserConsents",
         "parameters": [
           {
@@ -10145,7 +10148,7 @@
           "Users"
         ],
         "summary": "List reference tokens",
-        "description": "Retrieves a paginated list of reference tokens issued for the specified user. Reference tokens are opaque access tokens that require introspection for validation. Optional query parameters allow searching, filtering, and sorting the results.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Retrieves a paginated list of reference tokens issued for the specified user. Reference tokens are opaque access tokens that require introspection for validation. Optional query parameters allow searching, filtering, and sorting the results.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "GetAllReferenceTokens",
         "parameters": [
           {
@@ -10331,7 +10334,7 @@
           "Users"
         ],
         "summary": "List refresh tokens",
-        "description": "Retrieves a paginated list of refresh tokens issued for the specified user. Optional query parameters allow searching, filtering, and sorting the results.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Retrieves a paginated list of refresh tokens issued for the specified user. Optional query parameters allow searching, filtering, and sorting the results.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "GetAllRefreshTokens",
         "parameters": [
           {
@@ -10517,7 +10520,7 @@
           "Users"
         ],
         "summary": "List authorization codes",
-        "description": "Retrieves a paginated list of authorization codes issued for the specified user. Authorization codes are ephemeral credentials used in OAuth 2.0 authorization flows before token exchange. Optional query parameters allow searching, filtering, and sorting the results.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Retrieves a paginated list of authorization codes issued for the specified user. Authorization codes are ephemeral credentials used in OAuth 2.0 authorization flows before token exchange. Optional query parameters allow searching, filtering, and sorting the results.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "GetAllAuthorizationCodes",
         "parameters": [
           {
@@ -10703,7 +10706,7 @@
           "Users"
         ],
         "summary": "Revoke client grants",
-        "description": "Revokes all grants issued to the user for the specified application, invalidating existing authorizations.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Revokes all grants issued to the user for the specified application, invalidating existing authorizations.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "RevokeUserClientGrants",
         "parameters": [
           {
@@ -10817,7 +10820,7 @@
           "Users"
         ],
         "summary": "Revoke a consent",
-        "description": "Revokes the specified consent, invalidating any previously authorized scopes. If applicable, the application must obtain new consent before acting on behalf of the user again.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Revokes the specified consent, invalidating any previously authorized scopes. If applicable, the application must obtain new consent before acting on behalf of the user again.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "RevokeUserConsent",
         "parameters": [
           {
@@ -10931,7 +10934,7 @@
           "Users"
         ],
         "summary": "Revoke a reference token",
-        "description": "Revokes the specified reference token issued to an application, rendering it invalid for future access to protected resources.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Revokes the specified reference token issued to an application, rendering it invalid for future access to protected resources.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "RevokeReferenceToken",
         "parameters": [
           {
@@ -11045,7 +11048,7 @@
           "Users"
         ],
         "summary": "Revoke a refresh token",
-        "description": "Revokes the specified refresh token, rendering it unusable for obtaining new access tokens.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Revokes the specified refresh token, rendering it unusable for obtaining new access tokens.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "RevokeRefreshToken",
         "parameters": [
           {
@@ -11159,7 +11162,7 @@
           "Users"
         ],
         "summary": "Revoke an authorization code",
-        "description": "Revokes an authorization code that has not yet been exchanged for tokens, preventing any further use.\n>[!note]\n> Access to grant and token management endpoints requires an active Secure+ subscription.",
+        "description": "Revokes an authorization code that has not yet been exchanged for tokens, preventing any further use.\n\n<Note>\n Access to grant and token management endpoints requires an active Secure+ subscription.\n</Note>",
         "operationId": "RevokeAuthorizationCode",
         "parameters": [
           {
@@ -11387,7 +11390,7 @@
           "Groups"
         ],
         "summary": "Create a group",
-        "description": "Creates a new group that can be referenced in access policies, role assignments or user membership management.\n>[!note]\n> Creation of more than two groups requires an active Pro plan subscription.",
+        "description": "Creates a new group that can be referenced in access policies, role assignments or user membership management.\n\n<Note>\n Creation of more than two groups requires an active Pro plan subscription.\n</Note>",
         "operationId": "CreateGroup",
         "requestBody": {
           "description": "The request payload used to create a group.",
@@ -11716,7 +11719,7 @@
           "Groups"
         ],
         "summary": "Delete a group",
-        "description": "Permanently removes the specified group. Users who are members of this group will no longer be associated with it after deletion.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently removes the specified group. Users who are members of this group will no longer be associated with it after deletion.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteGroup",
         "parameters": [
           {
@@ -12244,7 +12247,7 @@
           "Trust Stores"
         ],
         "summary": "Delete a PKI trust store",
-        "description": "Permanently deletes the specified PKI trust store.\n>[!warning]\n> This operation is irreversible. Any client applications relying on this trust store for mTLS authentication will immediately fail certificate validation.",
+        "description": "Permanently deletes the specified PKI trust store.\n\n<Warning>\n This operation is irreversible. Any client applications relying on this trust store for mTLS authentication will immediately fail certificate validation.\n</Warning>",
         "operationId": "DeletePkiTrustStore",
         "parameters": [
           {
@@ -12839,7 +12842,7 @@
           "Trust Stores"
         ],
         "summary": "Delete a certificate revocation",
-        "description": "Permanently removes the specified certificate revocation (CRL) from the trust store.\n>[!warning]\n> This operation is irreversible. Revocation checks will no longer include this CRL.",
+        "description": "Permanently removes the specified certificate revocation (CRL) from the trust store.\n\n<Warning>\n This operation is irreversible. Revocation checks will no longer include this CRL.\n</Warning>",
         "operationId": "RemoveCertificateRevocation",
         "parameters": [
           {
@@ -13697,7 +13700,7 @@
           "Trust Stores"
         ],
         "summary": "Delete a SPIFFE trust store",
-        "description": "Permanently deletes the specified SPIFFE trust store.\n>[!warning]\n> This operation is irreversible. Any client applications relying on this trust store for authentication will immediately fail validation.",
+        "description": "Permanently deletes the specified SPIFFE trust store.\n\n<Warning>\n This operation is irreversible. Any client applications relying on this trust store for authentication will immediately fail validation.\n</Warning>",
         "operationId": "DeleteSpiffeTrustStore",
         "parameters": [
           {
@@ -14283,7 +14286,7 @@
           "Keys"
         ],
         "summary": "Rotate a key",
-        "description": "Rotates the specified cryptographic key by generating a new key version and promoting it as the active signing key. The previous key is retained for validation to ensure continuity for previously issued tokens.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Rotates the specified cryptographic key by generating a new key version and promoting it as the active signing key. The previous key is retained for validation to ensure continuity for previously issued tokens.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "RotateKey",
         "parameters": [
           {
@@ -14378,7 +14381,7 @@
           "Keys"
         ],
         "summary": "Revoke a key",
-        "description": "Revokes the specified cryptographic key, marking it as untrusted and immediately preventing it from being used for token signing or validation.\n>[!warning]\n> This operation is irreversible. Previously issued tokens that rely on this key may no longer be considered valid, depending on the validation strategy.",
+        "description": "Revokes the specified cryptographic key, marking it as untrusted and immediately preventing it from being used for token signing or validation.\n\n<Warning>\n This operation is irreversible. Previously issued tokens that rely on this key may no longer be considered valid, depending on the validation strategy.\n</Warning>",
         "operationId": "RevokeKey",
         "parameters": [
           {
@@ -15176,7 +15179,7 @@
           "Options"
         ],
         "summary": "Delete a sign-up custom field",
-        "description": "Permanently deletes the specified sign-up custom field configuration.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified sign-up custom field configuration.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteSignUpCustomField",
         "parameters": [
           {
@@ -15611,7 +15614,7 @@
           "Options"
         ],
         "summary": "Delete an external provider",
-        "description": "Permanently deletes the specified external provider.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified external provider.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteExternalProvider",
         "parameters": [
           {
@@ -16521,7 +16524,7 @@
           "Network Zones"
         ],
         "summary": "Create an IP network zone",
-        "description": "Creates a new IP network zone containing IP address ranges that can be referenced by policies to allow or restrict access.\n>[!note]\n> Access to this endpoint requires an active ScaleX subscription.",
+        "description": "Creates a new IP network zone containing IP address ranges that can be referenced by policies to allow or restrict access.\n\n<Note>\n Access to this endpoint requires an active ScaleX subscription.\n</Note>",
         "operationId": "CreateIpNetworkZone",
         "requestBody": {
           "description": "The request payload used to create the IP network zone.",
@@ -16716,7 +16719,7 @@
           "Network Zones"
         ],
         "summary": "Update an IP network zone",
-        "description": "Applies a partial update to the specified IP network zone. Only fields included in the request are updated.\n>[!note]\n> Access to this endpoint requires an active ScaleX subscription.",
+        "description": "Applies a partial update to the specified IP network zone. Only fields included in the request are updated.\n\n<Note>\n Access to this endpoint requires an active ScaleX subscription.\n</Note>",
         "operationId": "PatchIpNetworkZone",
         "parameters": [
           {
@@ -16842,7 +16845,7 @@
           "Network Zones"
         ],
         "summary": "Delete an IP network zone",
-        "description": "Permanently deletes the specified IP network zone.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified IP network zone.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteIpNetworkZone",
         "parameters": [
           {
@@ -16922,7 +16925,7 @@
           "Network Zones"
         ],
         "summary": "Create a regional network zone",
-        "description": "Creates a new regional network zone containing countries that can be referenced by policies to allow or restrict access.\n>[!note]\n> Access to this endpoint requires an active ScaleX subscription.",
+        "description": "Creates a new regional network zone containing countries that can be referenced by policies to allow or restrict access.\n\n<Note>\n Access to this endpoint requires an active ScaleX subscription.\n</Note>",
         "operationId": "CreateRegionalNetworkZone",
         "requestBody": {
           "description": "The request payload used to create the regional network zone.",
@@ -17117,7 +17120,7 @@
           "Network Zones"
         ],
         "summary": "Update a regional network zone",
-        "description": "Applies a partial update to the specified regional network zone. Only fields included in the request are updated.\n>[!note]\n> Access to this endpoint requires an active ScaleX subscription.",
+        "description": "Applies a partial update to the specified regional network zone. Only fields included in the request are updated.\n\n<Note>\n Access to this endpoint requires an active ScaleX subscription.\n</Note>",
         "operationId": "PatchRegionalNetworkZone",
         "parameters": [
           {
@@ -17243,7 +17246,7 @@
           "Network Zones"
         ],
         "summary": "Delete a regional network zone",
-        "description": "Permanently deletes the specified regional network zone.\n>[!warning]\n> This operation is irreversible.",
+        "description": "Permanently deletes the specified regional network zone.\n\n<Warning>\n This operation is irreversible.\n</Warning>",
         "operationId": "DeleteRegionalNetworkZone",
         "parameters": [
           {
@@ -17735,7 +17738,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource may include additional audiences. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to allow multi-audience tokens.",
+            "description": "Overrides whether access tokens issued for this resource may include additional audiences. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to allow multi-audience tokens.\n</Note>",
             "example": false
           },
           "allow_user_info_access": {
@@ -17743,7 +17746,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource may include identity scopes and be used with identity endpoints such as UserInfo. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to allow UserInfo access.",
+            "description": "Overrides whether access tokens issued for this resource may include identity scopes and be used with identity endpoints such as UserInfo. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to allow UserInfo access.\n</Note>",
             "example": true
           },
           "bind_tokens_to_session": {
@@ -17751,7 +17754,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource are bound to the user session and revoked when the session ends. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Overrides whether access tokens issued for this resource are bound to the user session and revoked when the session ends. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "example": true
           }
         },
@@ -17820,12 +17823,12 @@
           },
           "allow_multi_audience": {
             "type": "boolean",
-            "description": "Default value for whether access tokens issued for this API resource may carry additional audiences beyond this resource. Used when no matching API access policy provides an override.\n>[!note]\n> ScaleX subscription required to allow multi-audience tokens.",
+            "description": "Default value for whether access tokens issued for this API resource may carry additional audiences beyond this resource. Used when no matching API access policy provides an override.\n\n<Note>\n ScaleX subscription required to allow multi-audience tokens.\n</Note>",
             "example": false
           },
           "allow_user_info_access": {
             "type": "boolean",
-            "description": "Default value for whether access tokens issued for this API resource may include identity scopes, allowing them to be used with identity-related endpoints such as `UserInfo`. Used when no matching API access policy provides an override.\n>[!note]\n> ScaleX subscription required to allow UserInfo access.",
+            "description": "Default value for whether access tokens issued for this API resource may include identity scopes, allowing them to be used with identity-related endpoints such as `UserInfo`. Used when no matching API access policy provides an override.\n\n<Note>\n ScaleX subscription required to allow UserInfo access.\n</Note>",
             "example": true
           },
           "access_token_type": {
@@ -17843,12 +17846,12 @@
           },
           "bind_tokens_to_session": {
             "type": "boolean",
-            "description": "Default value for whether access tokens issued for this API resource are bound to the user session, causing them to be revoked when the session ends. Used when no matching API access policy provides an override.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Default value for whether access tokens issued for this API resource are bound to the user session, causing them to be revoked when the session ends. Used when no matching API access policy provides an override.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "example": true
           },
           "include_jwt_id": {
             "type": "boolean",
-            "description": "Determines whether access tokens issued for this API resource include a unique token identifier (jti).\n>[!note]\n> Recommended for auditing, correlation, and replay-detection.",
+            "description": "Determines whether access tokens issued for this API resource include a unique token identifier (jti).\n\n<Note>\n Recommended for auditing, correlation, and replay-detection.\n</Note>",
             "example": true
           },
           "user_claims": {
@@ -18033,7 +18036,7 @@
           },
           "require_client_secret": {
             "type": "boolean",
-            "description": "Requires confidential clients to present a client secret when requesting tokens.\n>[!warning]\n> Only disable for public clients (e.g., SPA / mobile).",
+            "description": "Requires confidential clients to present a client secret when requesting tokens.\n\n<Warning>\n Only disable for public clients (e.g., SPA / mobile).\n</Warning>",
             "example": true
           },
           "client_name": {
@@ -18067,17 +18070,17 @@
           },
           "enable_consent": {
             "type": "boolean",
-            "description": "Indicates whether the consents are enabled for the client.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Indicates whether the consents are enabled for the client.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "example": false
           },
           "require_consent": {
             "type": "boolean",
-            "description": "Controls whether users are prompted to review and approve requested permissions.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Controls whether users are prompted to review and approve requested permissions.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "example": false
           },
           "always_require_consent_for_offline_access": {
             "type": "boolean",
-            "description": "Always prompts users for consent when requesting offline (refresh token) access.\n>[!note]\n> This setting applies even if the user previously chose to remember their consent.\r\nSecure+ subscription required to use consents.",
+            "description": "Always prompts users for consent when requesting offline (refresh token) access.\n\n<Note>\n This setting applies even if the user previously chose to remember their consent.\r\nSecure+ subscription required to use consents.\n</Note>",
             "example": false
           },
           "remember_consent": {
@@ -18089,12 +18092,12 @@
           },
           "show_consent_scope_selection": {
             "type": "boolean",
-            "description": "Allows end users to choose which requested scopes to grant on the consent screen.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Allows end users to choose which requested scopes to grant on the consent screen.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "example": true
           },
           "always_include_user_claims_in_id_token": {
             "type": "boolean",
-            "description": "Always embeds user claims in the ID token instead of requiring calls to the `UserInfo` endpoint.\n>[!note]\n> Enabling this increases the ID token size and may expose more user data to applications than necessary.",
+            "description": "Always embeds user claims in the ID token instead of requiring calls to the `UserInfo` endpoint.\n\n<Note>\n Enabling this increases the ID token size and may expose more user data to applications than necessary.\n</Note>",
             "example": false
           },
           "allowed_grant_types": {
@@ -18103,7 +18106,7 @@
             "items": {
               "$ref": "#/components/schemas/GrantTypes"
             },
-            "description": "Defines which OAuth / OIDC grant types this client is permitted to use.\n>[!note]\n> Only valid and secure grant combinations are supported.",
+            "description": "Defines which OAuth / OIDC grant types this client is permitted to use.\n\n<Note>\n Only valid and secure grant combinations are supported.\n</Note>",
             "example": [
               "hybrid",
               "device_code"
@@ -18111,27 +18114,27 @@
           },
           "require_pkce": {
             "type": "boolean",
-            "description": "Requires Proof Key for Code Exchange (PKCE) for authorization code flows.\n>[!note]\n> Strongly recommended for public clients such as SPAs and mobile applications.",
+            "description": "Requires Proof Key for Code Exchange (PKCE) for authorization code flows.\n\n<Note>\n Strongly recommended for public clients such as SPAs and mobile applications.\n</Note>",
             "example": true
           },
           "allow_plain_text_pkce": {
             "type": "boolean",
-            "description": "Allows Proof Key for Code Exchange (PKCE) verification using the plain (unhashed) method.\n>[!warning]\n> Use only for legacy compatibility — strongly discouraged for production.",
+            "description": "Allows Proof Key for Code Exchange (PKCE) verification using the plain (unhashed) method.\n\n<Warning>\n Use only for legacy compatibility — strongly discouraged for production.\n</Warning>",
             "example": false
           },
           "require_request_object": {
             "type": "boolean",
-            "description": "Requires authorization requests to be sent as signed JWT request objects (JAR).\n>[!note]\n> Secure+ subscription required to use JWT request objects (JAR).",
+            "description": "Requires authorization requests to be sent as signed JWT request objects (JAR).\n\n<Note>\n Secure+ subscription required to use JWT request objects (JAR).\n</Note>",
             "example": false
           },
           "require_pushed_authorization_requests": {
             "type": "boolean",
-            "description": "Requires clients to use Pushed Authorization Requests (PAR) instead of sending parameters directly to the authorization endpoint.\n>[!note]\n> Secure+ subscription required to use Pushed Authorization Requests (PAR).",
+            "description": "Requires clients to use Pushed Authorization Requests (PAR) instead of sending parameters directly to the authorization endpoint.\n\n<Note>\n Secure+ subscription required to use Pushed Authorization Requests (PAR).\n</Note>",
             "example": false
           },
           "allow_any_pushed_authorization_redirect_uri": {
             "type": "boolean",
-            "description": "Allows the client to use any redirect URI when using Pushed Authorization Requests (PAR), instead of being limited to the configured redirect URI list.\n>[!note]\n> Secure+ subscription required to use Pushed Authorization Requests (PAR).",
+            "description": "Allows the client to use any redirect URI when using Pushed Authorization Requests (PAR), instead of being limited to the configured redirect URI list.\n\n<Note>\n Secure+ subscription required to use Pushed Authorization Requests (PAR).\n</Note>",
             "example": false
           },
           "authorization_request_lifetime": {
@@ -18142,7 +18145,7 @@
           },
           "allow_access_tokens_via_browser": {
             "type": "boolean",
-            "description": "Controls whether access tokens may be transmitted via the browser for this client.\n>[!warning]\n> Enable only when absolutely necessary. Returning access tokens to the browser increases the risk of leakage through logs, plugins, redirects, or malicious scripts. Recommended to keep disabled and prefer the Authorization Code + PKCE flow.",
+            "description": "Controls whether access tokens may be transmitted via the browser for this client.\n\n<Warning>\n Enable only when absolutely necessary. Returning access tokens to the browser increases the risk of leakage through logs, plugins, redirects, or malicious scripts. Recommended to keep disabled and prefer the Authorization Code + PKCE flow.\n</Warning>",
             "example": false
           },
           "redirect_uris": {
@@ -18151,7 +18154,7 @@
             "items": {
               "type": "string"
             },
-            "description": "List of approved redirect URIs where authorization codes or tokens may be sent.\n>[!note]\n> Only exact, fully-qualified matches are allowed.",
+            "description": "List of approved redirect URIs where authorization codes or tokens may be sent.\n\n<Note>\n Only exact, fully-qualified matches are allowed.\n</Note>",
             "example": [
               "https://www.organization/accounting/redirect1",
               "https://www.organization/hr/redirect"
@@ -18163,7 +18166,7 @@
             "items": {
               "type": "string"
             },
-            "description": "List of approved URIs users can be redirected to after a successful logout.\n>[!note]\n> Only exact, fully-qualified matches are allowed.",
+            "description": "List of approved URIs users can be redirected to after a successful logout.\n\n<Note>\n Only exact, fully-qualified matches are allowed.\n</Note>",
             "example": [
               "https://www.organization/accounting/loggedout",
               "https://www.organization/hr/loggedout"
@@ -18174,12 +18177,12 @@
               "null",
               "string"
             ],
-            "description": "Browser-based (front-channel) endpoint on the client that receives user logout notifications from MonoCloud.\n>[!note]\n> Pro plan subscription required to use front-channel logout.",
+            "description": "Browser-based (front-channel) endpoint on the client that receives user logout notifications from MonoCloud.\n\n<Note>\n Pro plan subscription required to use front-channel logout.\n</Note>",
             "example": "https://www.organization/accounting/frontLogout"
           },
           "front_channel_logout_session_required": {
             "type": "boolean",
-            "description": "Indicates whether the user’s session identifier should be included when invoking the front-channel logout URI.\n>[!note]\n> Pro plan subscription required to use front-channel logout.",
+            "description": "Indicates whether the user’s session identifier should be included when invoking the front-channel logout URI.\n\n<Note>\n Pro plan subscription required to use front-channel logout.\n</Note>",
             "example": true
           },
           "back_channel_logout_uri": {
@@ -18187,22 +18190,22 @@
               "null",
               "string"
             ],
-            "description": "Server-side (back-channel) endpoint that MonoCloud calls to notify the application of a user logout.\n>[!note]\n> Secure+ subscription required to use back-channel logout.",
+            "description": "Server-side (back-channel) endpoint that MonoCloud calls to notify the application of a user logout.\n\n<Note>\n Secure+ subscription required to use back-channel logout.\n</Note>",
             "example": "https://www.organization/accounting/backLogout"
           },
           "back_channel_logout_session_required": {
             "type": "boolean",
-            "description": "Indicates whether the user’s session identifier should be included when invoking the back-channel logout URI.\n>[!note]\n> Secure+ subscription required to use back-channel logout.",
+            "description": "Indicates whether the user’s session identifier should be included when invoking the back-channel logout URI.\n\n<Note>\n Secure+ subscription required to use back-channel logout.\n</Note>",
             "example": true
           },
           "bind_refresh_tokens_to_session": {
             "type": "boolean",
-            "description": "Binds refresh tokens issued for the client to the user's session. When enabled, refresh tokens are automatically revoked when the user signs out or the session expires.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Binds refresh tokens issued for the client to the user's session. When enabled, refresh tokens are automatically revoked when the user signs out or the session expires.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "example": true
           },
           "allow_offline_access": {
             "type": "boolean",
-            "description": "Allows the client to obtain refresh tokens using the `offline_access` scope.\n>[!note]\n> Use only for trusted applications that can securely store long-lived tokens.",
+            "description": "Allows the client to obtain refresh tokens using the `offline_access` scope.\n\n<Note>\n Use only for trusted applications that can securely store long-lived tokens.\n</Note>",
             "example": false
           },
           "allowed_identity_scopes": {
@@ -18238,13 +18241,13 @@
           },
           "consent_lifetime": {
             "type": "integer",
-            "description": "Specifies the validity period for stored user consent (in seconds). Set to `0` to allow consent to remain valid indefinitely.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Specifies the validity period for stored user consent (in seconds). Set to `0` to allow consent to remain valid indefinitely.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "format": "int32",
             "example": 604800
           },
           "absolute_refresh_token_lifetime": {
             "type": "integer",
-            "description": "Specifies the maximum lifetime of a refresh token (in seconds), regardless of how often it is used.\n>[!note]\n> ScaleX subscription required to configure refresh token lifetimes longer than a month.",
+            "description": "Specifies the maximum lifetime of a refresh token (in seconds), regardless of how often it is used.\n\n<Note>\n ScaleX subscription required to configure refresh token lifetimes longer than a month.\n</Note>",
             "format": "int32",
             "example": 2592000
           },
@@ -18291,7 +18294,7 @@
             "items": {
               "type": "string"
             },
-            "description": "Defines the authenticators users may use to sign in with this client. Leave empty to inherit the global authenticator policy.\n>[!note]\n> Pro plan subscription required to enable authenticator restrictions.",
+            "description": "Defines the authenticators users may use to sign in with this client. Leave empty to inherit the global authenticator policy.\n\n<Note>\n Pro plan subscription required to enable authenticator restrictions.\n</Note>",
             "example": [
               "email",
               "google"
@@ -18880,7 +18883,7 @@
               "null",
               "string"
             ],
-            "description": "A pre-computed password hash for the new password.\n>[!warning]\n> When provided, password validation and password policy requirements are not enforced. The hash is stored as-is.",
+            "description": "A pre-computed password hash for the new password.\n\n<Warning>\n When provided, password validation and password policy requirements are not enforced. The hash is stored as-is.\n</Warning>",
             "example": "$2a$12$LJdMf15uRsDpd57LKCGxSOTec3MD6jsgJhxRxCeSj2ZKobGo2xPDS"
           },
           "new_password_hash_algorithm": {
@@ -19268,7 +19271,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource may include additional audiences. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to allow multi-audience tokens.",
+            "description": "Overrides whether access tokens issued for this resource may include additional audiences. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to allow multi-audience tokens.\n</Note>",
             "example": false
           },
           "allow_user_info_access": {
@@ -19276,7 +19279,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource may include identity scopes and be used with identity endpoints such as UserInfo. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to allow UserInfo access.",
+            "description": "Overrides whether access tokens issued for this resource may include identity scopes and be used with identity endpoints such as UserInfo. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to allow UserInfo access.\n</Note>",
             "example": true
           },
           "bind_tokens_to_session": {
@@ -19284,7 +19287,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource are bound to the user session and revoked when the session ends. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Overrides whether access tokens issued for this resource are bound to the user session and revoked when the session ends. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "example": true
           }
         },
@@ -19331,13 +19334,13 @@
           },
           "allow_multi_audience": {
             "type": "boolean",
-            "description": "Default value for whether access tokens issued for this API resource may carry additional audiences beyond this resource. Used when no matching API access policy provides an override.\n>[!note]\n> ScaleX subscription required to allow multi-audience tokens.",
+            "description": "Default value for whether access tokens issued for this API resource may carry additional audiences beyond this resource. Used when no matching API access policy provides an override.\n\n<Note>\n ScaleX subscription required to allow multi-audience tokens.\n</Note>",
             "default": false,
             "example": false
           },
           "allow_user_info_access": {
             "type": "boolean",
-            "description": "Default value for whether access tokens issued for this API resource may include identity scopes, allowing them to be used with identity-related endpoints such as `UserInfo`. Used when no matching API access policy provides an override.\n>[!note]\n> ScaleX subscription required to allow UserInfo access.",
+            "description": "Default value for whether access tokens issued for this API resource may include identity scopes, allowing them to be used with identity-related endpoints such as `UserInfo`. Used when no matching API access policy provides an override.\n\n<Note>\n ScaleX subscription required to allow UserInfo access.\n</Note>",
             "default": false,
             "example": true
           },
@@ -19360,13 +19363,13 @@
           },
           "bind_tokens_to_session": {
             "type": "boolean",
-            "description": "Default value for whether access tokens issued for this API resource are bound to the user session, causing them to be revoked when the session ends. Used when no matching API access policy provides an override.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Default value for whether access tokens issued for this API resource are bound to the user session, causing them to be revoked when the session ends. Used when no matching API access policy provides an override.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "default": false,
             "example": true
           },
           "include_jwt_id": {
             "type": "boolean",
-            "description": "Determines whether access tokens issued for this API resource include a unique token identifier (jti).\n>[!note]\n> Recommended for auditing, correlation, and replay-detection.",
+            "description": "Determines whether access tokens issued for this API resource include a unique token identifier (jti).\n\n<Note>\n Recommended for auditing, correlation, and replay-detection.\n</Note>",
             "default": true,
             "example": true
           },
@@ -19388,7 +19391,7 @@
           },
           "auto_generate_secret": {
             "type": "boolean",
-            "description": "Automatically generates a secure secret when the API resource is created. This secret is used by the resource to authenticate when performing token introspection.\n>[!note]\n> ScaleX subscription required to generate API secrets.",
+            "description": "Automatically generates a secure secret when the API resource is created. This secret is used by the resource to authenticate when performing token introspection.\n\n<Note>\n ScaleX subscription required to generate API secrets.\n</Note>",
             "default": false,
             "example": false
           }
@@ -19505,7 +19508,7 @@
           },
           "require_client_secret": {
             "type": "boolean",
-            "description": "Requires confidential clients to present a client secret when requesting tokens.\n>[!warning]\n> Only disable for public clients (e.g., SPA / mobile).",
+            "description": "Requires confidential clients to present a client secret when requesting tokens.\n\n<Warning>\n Only disable for public clients (e.g., SPA / mobile).\n</Warning>",
             "default": true,
             "example": true
           },
@@ -19547,19 +19550,19 @@
           },
           "enable_consent": {
             "type": "boolean",
-            "description": "Indicates whether the consents are enabled for the client.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Indicates whether the consents are enabled for the client.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "default": false,
             "example": false
           },
           "require_consent": {
             "type": "boolean",
-            "description": "Controls whether users are prompted to review and approve requested permissions.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Controls whether users are prompted to review and approve requested permissions.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "default": false,
             "example": false
           },
           "always_require_consent_for_offline_access": {
             "type": "boolean",
-            "description": "Always prompts users for consent when requesting offline (refresh token) access.\n>[!note]\n> This setting applies even if the user previously chose to remember their consent.\r\nSecure+ subscription required to use consents.",
+            "description": "Always prompts users for consent when requesting offline (refresh token) access.\n\n<Note>\n This setting applies even if the user previously chose to remember their consent.\r\nSecure+ subscription required to use consents.\n</Note>",
             "default": false,
             "example": false
           },
@@ -19573,13 +19576,13 @@
           },
           "show_consent_scope_selection": {
             "type": "boolean",
-            "description": "Allows end users to choose which requested scopes to grant on the consent screen.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Allows end users to choose which requested scopes to grant on the consent screen.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "default": true,
             "example": true
           },
           "always_include_user_claims_in_id_token": {
             "type": "boolean",
-            "description": "Always embeds user claims in the ID token instead of requiring calls to the `UserInfo` endpoint.\n>[!note]\n> Enabling this increases the ID token size and may expose more user data to applications than necessary.",
+            "description": "Always embeds user claims in the ID token instead of requiring calls to the `UserInfo` endpoint.\n\n<Note>\n Enabling this increases the ID token size and may expose more user data to applications than necessary.\n</Note>",
             "default": false,
             "example": false
           },
@@ -19590,7 +19593,7 @@
             "items": {
               "$ref": "#/components/schemas/GrantTypes"
             },
-            "description": "Defines which OAuth / OIDC grant types this client is permitted to use.\n>[!note]\n> Only valid and secure grant combinations are supported.",
+            "description": "Defines which OAuth / OIDC grant types this client is permitted to use.\n\n<Note>\n Only valid and secure grant combinations are supported.\n</Note>",
             "example": [
               "hybrid",
               "device_code"
@@ -19598,31 +19601,31 @@
           },
           "require_pkce": {
             "type": "boolean",
-            "description": "Requires Proof Key for Code Exchange (PKCE) for authorization code flows.\n>[!note]\n> Strongly recommended for public clients such as SPAs and mobile applications.",
+            "description": "Requires Proof Key for Code Exchange (PKCE) for authorization code flows.\n\n<Note>\n Strongly recommended for public clients such as SPAs and mobile applications.\n</Note>",
             "default": true,
             "example": true
           },
           "allow_plain_text_pkce": {
             "type": "boolean",
-            "description": "Allows Proof Key for Code Exchange (PKCE) verification using the plain (unhashed) method.\n>[!warning]\n> Use only for legacy compatibility — strongly discouraged for production.",
+            "description": "Allows Proof Key for Code Exchange (PKCE) verification using the plain (unhashed) method.\n\n<Warning>\n Use only for legacy compatibility — strongly discouraged for production.\n</Warning>",
             "default": false,
             "example": false
           },
           "require_request_object": {
             "type": "boolean",
-            "description": "Requires authorization requests to be sent as signed JWT request objects (JAR).\n>[!note]\n> Secure+ subscription required to use JWT request objects (JAR).",
+            "description": "Requires authorization requests to be sent as signed JWT request objects (JAR).\n\n<Note>\n Secure+ subscription required to use JWT request objects (JAR).\n</Note>",
             "default": false,
             "example": false
           },
           "require_pushed_authorization_requests": {
             "type": "boolean",
-            "description": "Requires clients to use Pushed Authorization Requests (PAR) instead of sending parameters directly to the authorization endpoint.\n>[!note]\n> Secure+ subscription required to use Pushed Authorization Requests (PAR).",
+            "description": "Requires clients to use Pushed Authorization Requests (PAR) instead of sending parameters directly to the authorization endpoint.\n\n<Note>\n Secure+ subscription required to use Pushed Authorization Requests (PAR).\n</Note>",
             "default": false,
             "example": false
           },
           "allow_any_pushed_authorization_redirect_uri": {
             "type": "boolean",
-            "description": "Allows the client to use any redirect URI when using Pushed Authorization Requests (PAR), instead of being limited to the configured redirect URI list.\n>[!note]\n> Secure+ subscription required to use Pushed Authorization Requests (PAR).",
+            "description": "Allows the client to use any redirect URI when using Pushed Authorization Requests (PAR), instead of being limited to the configured redirect URI list.\n\n<Note>\n Secure+ subscription required to use Pushed Authorization Requests (PAR).\n</Note>",
             "default": false,
             "example": false
           },
@@ -19637,7 +19640,7 @@
           },
           "allow_access_tokens_via_browser": {
             "type": "boolean",
-            "description": "Controls whether access tokens may be transmitted via the browser for this client.\n>[!warning]\n> Enable only when absolutely necessary. Returning access tokens to the browser increases the risk of leakage through logs, plugins, redirects, or malicious scripts. Recommended to keep disabled and prefer the Authorization Code + PKCE flow.",
+            "description": "Controls whether access tokens may be transmitted via the browser for this client.\n\n<Warning>\n Enable only when absolutely necessary. Returning access tokens to the browser increases the risk of leakage through logs, plugins, redirects, or malicious scripts. Recommended to keep disabled and prefer the Authorization Code + PKCE flow.\n</Warning>",
             "default": false,
             "example": false
           },
@@ -19651,7 +19654,7 @@
               "type": "string",
               "format": "uri"
             },
-            "description": "List of approved redirect URIs where authorization codes or tokens may be sent.\n>[!note]\n> Only exact, fully-qualified matches are allowed.",
+            "description": "List of approved redirect URIs where authorization codes or tokens may be sent.\n\n<Note>\n Only exact, fully-qualified matches are allowed.\n</Note>",
             "default": [ ],
             "example": [
               "https://www.organization/accounting/redirect1",
@@ -19668,7 +19671,7 @@
               "type": "string",
               "format": "uri"
             },
-            "description": "List of approved URIs users can be redirected to after a successful logout.\n>[!note]\n> Only exact, fully-qualified matches are allowed.",
+            "description": "List of approved URIs users can be redirected to after a successful logout.\n\n<Note>\n Only exact, fully-qualified matches are allowed.\n</Note>",
             "default": [ ],
             "example": [
               "https://www.organization/accounting/loggedout",
@@ -19681,13 +19684,13 @@
               "null",
               "string"
             ],
-            "description": "Browser-based (front-channel) endpoint on the client that receives user logout notifications from MonoCloud.\n>[!note]\n> Pro plan subscription required to use front-channel logout.",
+            "description": "Browser-based (front-channel) endpoint on the client that receives user logout notifications from MonoCloud.\n\n<Note>\n Pro plan subscription required to use front-channel logout.\n</Note>",
             "format": "uri",
             "example": "https://www.organization/accounting/frontLogout"
           },
           "front_channel_logout_session_required": {
             "type": "boolean",
-            "description": "Indicates whether the user’s session identifier should be included when invoking the front-channel logout URI.\n>[!note]\n> Pro plan subscription required to use front-channel logout.",
+            "description": "Indicates whether the user’s session identifier should be included when invoking the front-channel logout URI.\n\n<Note>\n Pro plan subscription required to use front-channel logout.\n</Note>",
             "default": true,
             "example": true
           },
@@ -19697,25 +19700,25 @@
               "null",
               "string"
             ],
-            "description": "Server-side (back-channel) endpoint that MonoCloud calls to notify the application of a user logout.\n>[!note]\n> Secure+ subscription required to use back-channel logout.",
+            "description": "Server-side (back-channel) endpoint that MonoCloud calls to notify the application of a user logout.\n\n<Note>\n Secure+ subscription required to use back-channel logout.\n</Note>",
             "format": "uri",
             "example": "https://www.organization/accounting/backLogout"
           },
           "back_channel_logout_session_required": {
             "type": "boolean",
-            "description": "Indicates whether the user’s session identifier should be included when invoking the back-channel logout URI.\n>[!note]\n> Secure+ subscription required to use back-channel logout.",
+            "description": "Indicates whether the user’s session identifier should be included when invoking the back-channel logout URI.\n\n<Note>\n Secure+ subscription required to use back-channel logout.\n</Note>",
             "default": true,
             "example": true
           },
           "bind_refresh_tokens_to_session": {
             "type": "boolean",
-            "description": "Binds refresh tokens issued for the client to the user's session. When enabled, refresh tokens are automatically revoked when the user signs out or the session expires.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Binds refresh tokens issued for the client to the user's session. When enabled, refresh tokens are automatically revoked when the user signs out or the session expires.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "default": false,
             "example": true
           },
           "allow_offline_access": {
             "type": "boolean",
-            "description": "Allows the client to obtain refresh tokens using the `offline_access` scope.\n>[!note]\n> Use only for trusted applications that can securely store long-lived tokens.",
+            "description": "Allows the client to obtain refresh tokens using the `offline_access` scope.\n\n<Note>\n Use only for trusted applications that can securely store long-lived tokens.\n</Note>",
             "default": false,
             "example": false
           },
@@ -19768,7 +19771,7 @@
             "maximum": 2147483647,
             "minimum": 0,
             "type": "integer",
-            "description": "Specifies the validity period for stored user consent (in seconds). Set to `0` to allow consent to remain valid indefinitely.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Specifies the validity period for stored user consent (in seconds). Set to `0` to allow consent to remain valid indefinitely.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "format": "int32",
             "default": 0,
             "example": 604800
@@ -19777,7 +19780,7 @@
             "maximum": 157788000,
             "minimum": 5,
             "type": "integer",
-            "description": "Specifies the maximum lifetime of a refresh token (in seconds), regardless of how often it is used.\n>[!note]\n> ScaleX subscription required to configure refresh token lifetimes longer than a month.",
+            "description": "Specifies the maximum lifetime of a refresh token (in seconds), regardless of how often it is used.\n\n<Note>\n ScaleX subscription required to configure refresh token lifetimes longer than a month.\n</Note>",
             "format": "int32",
             "default": 2592000,
             "example": 2592000
@@ -19835,7 +19838,7 @@
             "items": {
               "type": "string"
             },
-            "description": "Defines the authenticators users may use to sign in with this client. Leave empty to inherit the global authenticator policy.\n>[!note]\n> Pro plan subscription required to enable authenticator restrictions.",
+            "description": "Defines the authenticators users may use to sign in with this client. Leave empty to inherit the global authenticator policy.\n\n<Note>\n Pro plan subscription required to enable authenticator restrictions.\n</Note>",
             "default": [ ],
             "example": [
               "email",
@@ -20799,7 +20802,7 @@
               "null",
               "string"
             ],
-            "description": "A pre-hashed password value. Useful during migrations to avoid forcing a password reset.\n>[!warning]\n> When provided, password validation and password policy requirements are not enforced. The hash is stored as-is.",
+            "description": "A pre-hashed password value. Useful during migrations to avoid forcing a password reset.\n\n<Warning>\n When provided, password validation and password policy requirements are not enforced. The hash is stored as-is.\n</Warning>",
             "example": "$2a$12$LJdMf15uRsDpd57LKCGxSOTec3MD6jsgJhxRxCeSj2ZKobGo2xPDS"
           },
           "password_hash_algorithm": {
@@ -21065,7 +21068,7 @@
           },
           "code_length": {
             "type": "integer",
-            "description": "Specifies the number of digits in the email verification code.\n>[!note]\n> Only applicable when the verification type includes code-based verification.",
+            "description": "Specifies the number of digits in the email verification code.\n\n<Note>\n Only applicable when the verification type includes code-based verification.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -21209,7 +21212,7 @@
           },
           "code_length": {
             "type": "integer",
-            "description": "Specifies the number of digits in the email verification code.\n>[!note]\n> Only applicable when the verification type includes code-based verification.",
+            "description": "Specifies the number of digits in the email verification code.\n\n<Note>\n Only applicable when the verification type includes code-based verification.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -21718,11 +21721,11 @@
         ],
         "description": "The OAuth2 / OIDC grant type.",
         "x-enum-descriptions": {
-          "implicit": "A legacy flow for browser-based applications in which tokens are returned directly from the authorization endpoint.\n>[!note]\n> Prefer Authorization Code with PKCE for modern applications.",
+          "implicit": "A legacy flow for browser-based applications in which tokens are returned directly from the authorization endpoint.\n\n<Note>\n Prefer Authorization Code with PKCE for modern applications.\n</Note>",
           "hybrid": "Combines elements of the implicit and authorization code flows, allowing the client to receive both tokens and an authorization code.",
           "authorization_code": "Obtains tokens through a secure back-channel exchange and supports client authentication and PKCE.",
           "client_credentials": "Used for machine-to-machine scenarios where tokens are issued to the client itself rather than an end user.",
-          "resource_owner_password": "A legacy flow that issues tokens using a user’s credentials sent directly to the token endpoint.\n>[!note]\n> Prefer Authorization Code with PKCE whenever possible.",
+          "resource_owner_password": "A legacy flow that issues tokens using a user’s credentials sent directly to the token endpoint.\n\n<Note>\n Prefer Authorization Code with PKCE whenever possible.\n</Note>",
           "device_code": "Supports devices with limited input capabilities (TVs, consoles, CLI tools) by allowing users to authenticate on a separate device while the client polls for approval."
         }
       },
@@ -23362,14 +23365,14 @@
                 "type": "null"
               },
               {
-                "description": "Overrides whether access tokens are issued as self-contained JWTs or opaque reference tokens. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to use reference tokens. Reference tokens improve revocation control and reduce token exposure, but require protected resources to use token introspection.",
+                "description": "Overrides whether access tokens are issued as self-contained JWTs or opaque reference tokens. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to use reference tokens. Reference tokens improve revocation control and reduce token exposure, but require protected resources to use token introspection.\n</Note>",
                 "examples": [
                   "jwt"
                 ],
                 "$ref": "#/components/schemas/AccessTokenTypes"
               }
             ],
-            "description": "Overrides whether access tokens are issued as self-contained JWTs or opaque reference tokens. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to use reference tokens. Reference tokens improve revocation control and reduce token exposure, but require protected resources to use token introspection.",
+            "description": "Overrides whether access tokens are issued as self-contained JWTs or opaque reference tokens. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to use reference tokens. Reference tokens improve revocation control and reduce token exposure, but require protected resources to use token introspection.\n</Note>",
             "example": "jwt"
           },
           "access_token_lifetime": {
@@ -23388,7 +23391,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource may include additional audiences. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to allow multi-audience tokens.",
+            "description": "Overrides whether access tokens issued for this resource may include additional audiences. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to allow multi-audience tokens.\n</Note>",
             "example": false
           },
           "allow_user_info_access": {
@@ -23396,7 +23399,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource may include identity scopes and be used with identity endpoints such as UserInfo. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to allow UserInfo access.",
+            "description": "Overrides whether access tokens issued for this resource may include identity scopes and be used with identity endpoints such as UserInfo. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to allow UserInfo access.\n</Note>",
             "example": true
           },
           "bind_tokens_to_session": {
@@ -23404,7 +23407,7 @@
               "null",
               "boolean"
             ],
-            "description": "Overrides whether access tokens issued for this resource are bound to the user session and revoked when the session ends. When unset, the API resource default is used.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Overrides whether access tokens issued for this resource are bound to the user session and revoked when the session ends. When unset, the API resource default is used.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "example": true
           }
         },
@@ -23439,12 +23442,12 @@
           },
           "allow_multi_audience": {
             "type": "boolean",
-            "description": "Specifies whether access tokens issued for this resource may carry additional audiences beyond this resource.\n>[!note]\n> ScaleX subscription required to allow multi-audience tokens.",
+            "description": "Specifies whether access tokens issued for this resource may carry additional audiences beyond this resource.\n\n<Note>\n ScaleX subscription required to allow multi-audience tokens.\n</Note>",
             "example": false
           },
           "allow_user_info_access": {
             "type": "boolean",
-            "description": "Specifies whether access tokens issued for this resource may include identity scopes, allowing them to be used with identity-related endpoints such as `UserInfo`.\n>[!note]\n> ScaleX subscription required to allow UserInfo access.",
+            "description": "Specifies whether access tokens issued for this resource may include identity scopes, allowing them to be used with identity-related endpoints such as `UserInfo`.\n\n<Note>\n ScaleX subscription required to allow UserInfo access.\n</Note>",
             "example": false
           },
           "user_claims": {
@@ -23463,7 +23466,7 @@
             ]
           },
           "access_token_type": {
-            "description": "Default access token type for this API resource. Used when no matching API access policy provides an override.\n>[!note]\n> ScaleX subscription required to use reference tokens. Reference tokens improve revocation control and reduce exposure risk, but require token introspection by protected resources.",
+            "description": "Default access token type for this API resource. Used when no matching API access policy provides an override.\n\n<Note>\n ScaleX subscription required to use reference tokens. Reference tokens improve revocation control and reduce exposure risk, but require token introspection by protected resources.\n</Note>",
             "examples": [
               "jwt"
             ],
@@ -23479,12 +23482,12 @@
           },
           "bind_tokens_to_session": {
             "type": "boolean",
-            "description": "Default value for whether access tokens issued for this API resource are bound to the user session, causing them to be revoked when the session ends. Used when no matching API access policy provides an override.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Default value for whether access tokens issued for this API resource are bound to the user session, causing them to be revoked when the session ends. Used when no matching API access policy provides an override.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "example": false
           },
           "include_jwt_id": {
             "type": "boolean",
-            "description": "Determines whether access tokens issued for this API resource include a unique token identifier (jti).\n>[!note]\n> Recommended for auditing, correlation, and replay-detection.",
+            "description": "Determines whether access tokens issued for this API resource include a unique token identifier (jti).\n\n<Note>\n Recommended for auditing, correlation, and replay-detection.\n</Note>",
             "example": true
           }
         },
@@ -23577,7 +23580,7 @@
           },
           "require_client_secret": {
             "type": "boolean",
-            "description": "Requires confidential clients to present a client secret when requesting tokens.\n>[!warning]\n> Only disable for public clients (e.g., SPA / mobile).",
+            "description": "Requires confidential clients to present a client secret when requesting tokens.\n\n<Warning>\n Only disable for public clients (e.g., SPA / mobile).\n</Warning>",
             "example": true
           },
           "client_name": {
@@ -23618,21 +23621,21 @@
           },
           "enable_consent": {
             "type": "boolean",
-            "description": "Indicates whether the consents are enabled for the client.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Indicates whether the consents are enabled for the client.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "example": false
           },
           "require_consent": {
             "type": "boolean",
-            "description": "Controls whether users are prompted to review and approve requested permissions.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Controls whether users are prompted to review and approve requested permissions.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "example": false
           },
           "always_require_consent_for_offline_access": {
             "type": "boolean",
-            "description": "Always prompts users for consent when requesting offline (refresh token) access.\n>[!note]\n> Secure+ subscription required to use consents.\r\nThis setting applies even if the user previously chose to remember their consent.",
+            "description": "Always prompts users for consent when requesting offline (refresh token) access.\n\n<Note>\n Secure+ subscription required to use consents.\r\nThis setting applies even if the user previously chose to remember their consent.\n</Note>",
             "example": false
           },
           "remember_consent": {
-            "description": "Controls how consent decisions are remembered for future sign-ins.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Controls how consent decisions are remembered for future sign-ins.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "examples": [
               "user_selected"
             ],
@@ -23640,12 +23643,12 @@
           },
           "show_consent_scope_selection": {
             "type": "boolean",
-            "description": "Allows end users to choose which requested scopes to grant on the consent screen.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Allows end users to choose which requested scopes to grant on the consent screen.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "example": true
           },
           "always_include_user_claims_in_id_token": {
             "type": "boolean",
-            "description": "Always embeds user claims in the ID token instead of requiring calls to the userinfo endpoint.\n>[!note]\n> Enabling this increases the ID token size and may expose more user data to applications than necessary.",
+            "description": "Always embeds user claims in the ID token instead of requiring calls to the userinfo endpoint.\n\n<Note>\n Enabling this increases the ID token size and may expose more user data to applications than necessary.\n</Note>",
             "example": false
           },
           "allowed_grant_types": {
@@ -23655,7 +23658,7 @@
             "items": {
               "$ref": "#/components/schemas/GrantTypes"
             },
-            "description": "Defines which OAuth / OIDC grant types this client is permitted to use.\n>[!note]\n> Only valid and secure grant combinations are supported.",
+            "description": "Defines which OAuth / OIDC grant types this client is permitted to use.\n\n<Note>\n Only valid and secure grant combinations are supported.\n</Note>",
             "example": [
               "hybrid",
               "device_code"
@@ -23663,27 +23666,27 @@
           },
           "require_pkce": {
             "type": "boolean",
-            "description": "Requires Proof Key for Code Exchange (PKCE) for authorization code flows.\n>[!note]\n> Strongly recommended for public clients such as SPAs and mobile applications.",
+            "description": "Requires Proof Key for Code Exchange (PKCE) for authorization code flows.\n\n<Note>\n Strongly recommended for public clients such as SPAs and mobile applications.\n</Note>",
             "example": true
           },
           "allow_plain_text_pkce": {
             "type": "boolean",
-            "description": "Allows Proof Key for Code Exchange (PKCE) verification using the plain (unhashed) method.\n>[!warning]\n> Use only for legacy compatibility — strongly discouraged for production.",
+            "description": "Allows Proof Key for Code Exchange (PKCE) verification using the plain (unhashed) method.\n\n<Warning>\n Use only for legacy compatibility — strongly discouraged for production.\n</Warning>",
             "example": false
           },
           "require_request_object": {
             "type": "boolean",
-            "description": "Requires authorization requests to be sent as signed JWT request objects.\n>[!note]\n> Secure+ subscription required to use JWT request objects (JAR).",
+            "description": "Requires authorization requests to be sent as signed JWT request objects.\n\n<Note>\n Secure+ subscription required to use JWT request objects (JAR).\n</Note>",
             "example": false
           },
           "require_pushed_authorization_requests": {
             "type": "boolean",
-            "description": "Requires clients to use Pushed Authorization Requests (PAR) instead of sending parameters directly to the authorization endpoint.\n>[!note]\n> Secure+ subscription required to use Pushed Authorization Requests (PAR).",
+            "description": "Requires clients to use Pushed Authorization Requests (PAR) instead of sending parameters directly to the authorization endpoint.\n\n<Note>\n Secure+ subscription required to use Pushed Authorization Requests (PAR).\n</Note>",
             "example": false
           },
           "allow_any_pushed_authorization_redirect_uri": {
             "type": "boolean",
-            "description": "Allows the client to use any redirect URI when using Pushed Authorization Requests (PAR), instead of being limited to the configured redirect URI list.\n>[!note]\n> Secure+ subscription required to use Pushed Authorization Requests (PAR).",
+            "description": "Allows the client to use any redirect URI when using Pushed Authorization Requests (PAR), instead of being limited to the configured redirect URI list.\n\n<Note>\n Secure+ subscription required to use Pushed Authorization Requests (PAR).\n</Note>",
             "example": false
           },
           "authorization_request_lifetime": {
@@ -23696,7 +23699,7 @@
           },
           "allow_access_tokens_via_browser": {
             "type": "boolean",
-            "description": "Controls whether access tokens may be transmitted via the browser for this client.\n>[!warning]\n> Enable only when absolutely necessary. Returning access tokens to the browser increases the risk of leakage through logs, plugins, redirects, or malicious scripts. Recommended to keep disabled and prefer the Authorization Code + PKCE flow.",
+            "description": "Controls whether access tokens may be transmitted via the browser for this client.\n\n<Warning>\n Enable only when absolutely necessary. Returning access tokens to the browser increases the risk of leakage through logs, plugins, redirects, or malicious scripts. Recommended to keep disabled and prefer the Authorization Code + PKCE flow.\n</Warning>",
             "example": false
           },
           "redirect_uris": {
@@ -23709,7 +23712,7 @@
               "type": "string",
               "format": "uri"
             },
-            "description": "List of approved redirect URIs where authorization codes or tokens may be sent.\n>[!note]\n> Only exact, fully-qualified matches are allowed.",
+            "description": "List of approved redirect URIs where authorization codes or tokens may be sent.\n\n<Note>\n Only exact, fully-qualified matches are allowed.\n</Note>",
             "example": [
               "https://www.organization/accounting/redirect1",
               "https://www.organization/hr/redirect"
@@ -23725,7 +23728,7 @@
               "type": "string",
               "format": "uri"
             },
-            "description": "List of approved URIs users can be redirected to after a successful logout.\n>[!note]\n> Only exact, fully-qualified matches are allowed.",
+            "description": "List of approved URIs users can be redirected to after a successful logout.\n\n<Note>\n Only exact, fully-qualified matches are allowed.\n</Note>",
             "example": [
               "https://www.organization/accounting/loggedout",
               "https://www.organization/hr/loggedout"
@@ -23737,13 +23740,13 @@
               "null",
               "string"
             ],
-            "description": "Browser-based (front-channel) endpoint on the client that receives user logout notifications from MonoCloud.\n>[!note]\n> Pro plan subscription required to use front-channel logout.",
+            "description": "Browser-based (front-channel) endpoint on the client that receives user logout notifications from MonoCloud.\n\n<Note>\n Pro plan subscription required to use front-channel logout.\n</Note>",
             "format": "uri",
             "example": "https://www.organization/accounting/frontLogout"
           },
           "front_channel_logout_session_required": {
             "type": "boolean",
-            "description": "Indicates whether the user’s session identifier should be included when invoking the front-channel logout URI.\n>[!note]\n> Pro plan subscription required to use front-channel logout.",
+            "description": "Indicates whether the user’s session identifier should be included when invoking the front-channel logout URI.\n\n<Note>\n Pro plan subscription required to use front-channel logout.\n</Note>",
             "example": true
           },
           "back_channel_logout_uri": {
@@ -23752,23 +23755,23 @@
               "null",
               "string"
             ],
-            "description": "Server-side (back-channel) endpoint that MonoCloud calls to notify the application of a user logout.\n>[!note]\n> Secure+ subscription required to use back-channel logout.",
+            "description": "Server-side (back-channel) endpoint that MonoCloud calls to notify the application of a user logout.\n\n<Note>\n Secure+ subscription required to use back-channel logout.\n</Note>",
             "format": "uri",
             "example": "https://www.organization/accounting/backLogout"
           },
           "back_channel_logout_session_required": {
             "type": "boolean",
-            "description": "Indicates whether the user’s session identifier should be included when invoking the back-channel logout URI.\n>[!note]\n> Secure+ subscription required to use back-channel logout.",
+            "description": "Indicates whether the user’s session identifier should be included when invoking the back-channel logout URI.\n\n<Note>\n Secure+ subscription required to use back-channel logout.\n</Note>",
             "example": true
           },
           "bind_refresh_tokens_to_session": {
             "type": "boolean",
-            "description": "Binds refresh tokens issued for the client to the user's session. When enabled, refresh tokens are automatically revoked when the user signs out or the session expires.\n>[!note]\n> ScaleX subscription required to use session binding.",
+            "description": "Binds refresh tokens issued for the client to the user's session. When enabled, refresh tokens are automatically revoked when the user signs out or the session expires.\n\n<Note>\n ScaleX subscription required to use session binding.\n</Note>",
             "example": true
           },
           "allow_offline_access": {
             "type": "boolean",
-            "description": "Allows the client to obtain refresh tokens using the `offline_access` scope.\n>[!note]\n> Use only for trusted applications that can securely store long-lived tokens.",
+            "description": "Allows the client to obtain refresh tokens using the `offline_access` scope.\n\n<Note>\n Use only for trusted applications that can securely store long-lived tokens.\n</Note>",
             "example": false
           },
           "allowed_identity_scopes": {
@@ -23816,7 +23819,7 @@
             "maximum": 2147483647,
             "minimum": 0,
             "type": "integer",
-            "description": "Specifies the validity period for stored user consent (in seconds). Set to `0` to allow consent to remain valid indefinitely.\n>[!note]\n> Secure+ subscription required to use consents.",
+            "description": "Specifies the validity period for stored user consent (in seconds). Set to `0` to allow consent to remain valid indefinitely.\n\n<Note>\n Secure+ subscription required to use consents.\n</Note>",
             "format": "int32",
             "example": 604800
           },
@@ -23824,7 +23827,7 @@
             "maximum": 157788000,
             "minimum": 5,
             "type": "integer",
-            "description": "Specifies the maximum lifetime of a refresh token (in seconds), regardless of how often it is used.\n>[!note]\n> ScaleX subscription required to configure refresh token lifetimes longer than a month.",
+            "description": "Specifies the maximum lifetime of a refresh token (in seconds), regardless of how often it is used.\n\n<Note>\n ScaleX subscription required to configure refresh token lifetimes longer than a month.\n</Note>",
             "format": "int32",
             "example": 2592000
           },
@@ -23861,7 +23864,7 @@
             "$ref": "#/components/schemas/RefreshTokenExpirationTypes"
           },
           "access_token_type": {
-            "description": "Specifies whether access tokens issued without API resource scopes are issued as self-contained JWTs or opaque reference tokens. These tokens may only be used with the UserInfo endpoint.\n>[!note]\n> ScaleX subscription required to use reference tokens. Reference tokens improve revocation control and reduce exposure risk, but require token introspection by protected resources.",
+            "description": "Specifies whether access tokens issued without API resource scopes are issued as self-contained JWTs or opaque reference tokens. These tokens may only be used with the UserInfo endpoint.\n\n<Note>\n ScaleX subscription required to use reference tokens. Reference tokens improve revocation control and reduce exposure risk, but require token introspection by protected resources.\n</Note>",
             "examples": [
               "jwt"
             ],
@@ -23876,7 +23879,7 @@
               "pattern": "^[a-z0-9]+([a-z0-9_-]+[a-z0-9])?$",
               "type": "string"
             },
-            "description": "Defines the authenticators users may use to sign in with this client. Leave empty to inherit the global authenticator policy.\n>[!note]\n> Pro plan subscription required to enable authenticator restrictions.",
+            "description": "Defines the authenticators users may use to sign in with this client. Leave empty to inherit the global authenticator policy.\n\n<Note>\n Pro plan subscription required to enable authenticator restrictions.\n</Note>",
             "example": [
               "email",
               "google"
@@ -24218,7 +24221,7 @@
               "null",
               "string"
             ],
-            "description": "Custom Liquid template used to render the SMS message content with runtime variables; when empty, the default template is used.\n>[!note]\n> Pro plan is required to use Custom Sms Templates",
+            "description": "Custom Liquid template used to render the SMS message content with runtime variables; when empty, the default template is used.\n\n<Note>\n Pro plan is required to use Custom Sms Templates\n</Note>",
             "example": "Your code for {{ client.name }} is {{ code }}"
           }
         },
@@ -24259,7 +24262,7 @@
             "maximum": 900,
             "minimum": 60,
             "type": "integer",
-            "description": "Specifies the validity period of the email verification link or code (in seconds).\n>[!note]\n> Pro plan required to customize the expiry.",
+            "description": "Specifies the validity period of the email verification link or code (in seconds).\n\n<Note>\n Pro plan required to customize the expiry.\n</Note>",
             "format": "int32",
             "example": 30
           },
@@ -24267,7 +24270,7 @@
             "maximum": 16,
             "minimum": 4,
             "type": "integer",
-            "description": "Specifies the number of digits in the email verification code.\n>[!note]\n> Only applicable when the verification type includes code-based verification. Pro plan required to customize the code length.",
+            "description": "Specifies the number of digits in the email verification code.\n\n<Note>\n Only applicable when the verification type includes code-based verification. Pro plan required to customize the code length.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -24380,7 +24383,7 @@
             "maximum": 900,
             "minimum": 60,
             "type": "integer",
-            "description": "Specifies the validity period of the email verification link or code (in seconds).\n>[!note]\n> Pro plan required to customize the expiry.",
+            "description": "Specifies the validity period of the email verification link or code (in seconds).\n\n<Note>\n Pro plan required to customize the expiry.\n</Note>",
             "format": "int32",
             "example": 300
           },
@@ -24388,7 +24391,7 @@
             "maximum": 16,
             "minimum": 4,
             "type": "integer",
-            "description": "Specifies the number of digits in the email verification code.\n>[!note]\n> Only applicable when the verification type includes code-based verification. Pro plan required to customize the code length.",
+            "description": "Specifies the number of digits in the email verification code.\n\n<Note>\n Only applicable when the verification type includes code-based verification. Pro plan required to customize the code length.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -24805,11 +24808,11 @@
             "example": 30
           },
           "strength": {
-            "description": "Password strength policy configuration.\n>[!note]\n> Pro plan required to customize password strength options.",
+            "description": "Password strength policy configuration.\n\n<Note>\n Pro plan required to customize password strength options.\n</Note>",
             "$ref": "#/components/schemas/PatchPasswordStrengthOptionsRequest"
           },
           "reuse": {
-            "description": "Password reuse policy configuration.\n>[!note]\n> Pro plan required to customize password history options.",
+            "description": "Password reuse policy configuration.\n\n<Note>\n Pro plan required to customize password history options.\n</Note>",
             "$ref": "#/components/schemas/PatchPasswordReuseOptionsRequest"
           }
         },
@@ -24910,7 +24913,7 @@
             "maximum": 900,
             "minimum": 60,
             "type": "integer",
-            "description": "Specifies the validity period of the phone verification code (in seconds).\n>[!note]\n> Pro plan required to customize the expiry.",
+            "description": "Specifies the validity period of the phone verification code (in seconds).\n\n<Note>\n Pro plan required to customize the expiry.\n</Note>",
             "format": "int32",
             "example": 30
           },
@@ -24918,7 +24921,7 @@
             "maximum": 16,
             "minimum": 4,
             "type": "integer",
-            "description": "Specifies the number of digits in the phone verification code.\n>[!note]\n> Pro plan required to customize the code length.",
+            "description": "Specifies the number of digits in the phone verification code.\n\n<Note>\n Pro plan required to customize the code length.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -24964,7 +24967,7 @@
             "maximum": 900,
             "minimum": 60,
             "type": "integer",
-            "description": "Specifies the validity period of the phone verification code (in seconds).\n>[!note]\n> Pro plan required to customize the expiry.",
+            "description": "Specifies the validity period of the phone verification code (in seconds).\n\n<Note>\n Pro plan required to customize the expiry.\n</Note>",
             "format": "int32",
             "example": 300
           },
@@ -24972,7 +24975,7 @@
             "maximum": 16,
             "minimum": 4,
             "type": "integer",
-            "description": "Specifies the number of digits in the phone verification code.\n>[!note]\n> Pro plan required to customize the code length.",
+            "description": "Specifies the number of digits in the phone verification code.\n\n<Note>\n Pro plan required to customize the code length.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -25099,12 +25102,12 @@
         "properties": {
           "enable_pushed_authorization_requests": {
             "type": "boolean",
-            "description": "Specifies whether Pushed Authorization Requests (PAR) are enabled for the tenant.\n>[!note]\n> Secure+ subscription required to use Pushed Authorization Requests (PAR).",
+            "description": "Specifies whether Pushed Authorization Requests (PAR) are enabled for the tenant.\n\n<Note>\n Secure+ subscription required to use Pushed Authorization Requests (PAR).\n</Note>",
             "example": false
           },
           "require_pushed_authorization_requests": {
             "type": "boolean",
-            "description": "Specifies whether Pushed Authorization Requests (PAR) are required tenant-wide for all authorization requests.\n>[!note]\n> When enabled, this setting overrides any client-specific PAR configuration and enforces PAR usage for all clients within the tenant.\r\nSecure+ subscription required to use Pushed Authorization Requests (PAR).",
+            "description": "Specifies whether Pushed Authorization Requests (PAR) are required tenant-wide for all authorization requests.\n\n<Note>\n When enabled, this setting overrides any client-specific PAR configuration and enforces PAR usage for all clients within the tenant.\r\nSecure+ subscription required to use Pushed Authorization Requests (PAR).\n</Note>",
             "example": false
           }
         },
@@ -25135,7 +25138,7 @@
             "maximum": 900,
             "minimum": 60,
             "type": "integer",
-            "description": "Specifies the validity period of the email recovery verification link or code (in seconds).\n>[!note]\n> Pro plan required to customize the expiry.",
+            "description": "Specifies the validity period of the email recovery verification link or code (in seconds).\n\n<Note>\n Pro plan required to customize the expiry.\n</Note>",
             "format": "int32",
             "example": 300
           },
@@ -25143,7 +25146,7 @@
             "maximum": 16,
             "minimum": 4,
             "type": "integer",
-            "description": "Specifies the number of digits in the email recovery verification code.\n>[!note]\n> Only applicable when the verification type includes code-based recovery. Pro plan required to customize the code length.",
+            "description": "Specifies the number of digits in the email recovery verification code.\n\n<Note>\n Only applicable when the verification type includes code-based recovery. Pro plan required to customize the code length.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -25178,7 +25181,7 @@
             "maximum": 900,
             "minimum": 60,
             "type": "integer",
-            "description": "Specifies the validity period of the recovery verification code (in seconds).\n>[!note]\n> Pro plan required to customize the expiry.",
+            "description": "Specifies the validity period of the recovery verification code (in seconds).\n\n<Note>\n Pro plan required to customize the expiry.\n</Note>",
             "format": "int32",
             "example": 300
           },
@@ -25186,7 +25189,7 @@
             "maximum": 16,
             "minimum": 4,
             "type": "integer",
-            "description": "Specifies the number of digits in the recovery verification code.\n>[!note]\n> Pro plan required to customize the code length.",
+            "description": "Specifies the number of digits in the recovery verification code.\n\n<Note>\n Pro plan required to customize the code length.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -25410,12 +25413,12 @@
         "properties": {
           "show_terms_and_privacy_policy": {
             "type": "boolean",
-            "description": "Show Terms and/or Privacy Policy on the sign-up screen.\n>[!note]\n> Pro plan required to enable Terms and/or Privacy Policy.",
+            "description": "Show Terms and/or Privacy Policy on the sign-up screen.\n\n<Note>\n Pro plan required to enable Terms and/or Privacy Policy.\n</Note>",
             "example": true
           },
           "require_explicit_user_agreement": {
             "type": "boolean",
-            "description": "Require the user to explicitly agree to the Terms and/or Privacy Policy.\n>[!note]\n> Pro plan required to enable Terms and Privacy Policy.",
+            "description": "Require the user to explicitly agree to the Terms and/or Privacy Policy.\n\n<Note>\n Pro plan required to enable Terms and Privacy Policy.\n</Note>",
             "example": true
           },
           "privacy_url": {
@@ -25424,7 +25427,7 @@
               "null",
               "string"
             ],
-            "description": "The URL of the Privacy Policy shown during sign-up.\n>[!note]\n> Pro plan required to enable Terms and Privacy Policy.",
+            "description": "The URL of the Privacy Policy shown during sign-up.\n\n<Note>\n Pro plan required to enable Terms and Privacy Policy.\n</Note>",
             "format": "uri",
             "example": "https://acme.com/privacy"
           },
@@ -25434,7 +25437,7 @@
               "null",
               "string"
             ],
-            "description": "The URL of the Terms of Service shown during sign-up.\n>[!note]\n> Pro plan required to enable Terms and Privacy Policy.",
+            "description": "The URL of the Terms of Service shown during sign-up.\n\n<Note>\n Pro plan required to enable Terms and Privacy Policy.\n</Note>",
             "format": "uri",
             "example": "https://acme.com/terms"
           },
@@ -25455,7 +25458,7 @@
         "properties": {
           "enabled": {
             "type": "boolean",
-            "description": "Indicates whether the identifier restriction list is active.\n>[!note]\n> Pro plan subscription required to use sign-up restrictions.",
+            "description": "Indicates whether the identifier restriction list is active.\n\n<Note>\n Pro plan subscription required to use sign-up restrictions.\n</Note>",
             "example": true
           },
           "identifiers": {
@@ -25466,7 +25469,7 @@
               "minLength": 1,
               "type": "string"
             },
-            "description": "A set of identifiers (email addresses, phone numbers, or domains) used for sign-up access control.\n>[!note]\n> Pro plan subscription required to use sign-up restrictions.",
+            "description": "A set of identifiers (email addresses, phone numbers, or domains) used for sign-up access control.\n\n<Note>\n Pro plan subscription required to use sign-up restrictions.\n</Note>",
             "example": [
               "organization.com",
               "example@organization.com",
@@ -25961,7 +25964,7 @@
           },
           "require_pushed_authorization_requests": {
             "type": "boolean",
-            "description": "Specifies whether Pushed Authorization Requests (PAR) are required tenant-wide for all authorization requests.\n>[!note]\n> When enabled, this setting overrides any client-specific PAR configuration and enforces PAR usage for all clients within the tenant.",
+            "description": "Specifies whether Pushed Authorization Requests (PAR) are required tenant-wide for all authorization requests.\n\n<Note>\n When enabled, this setting overrides any client-specific PAR configuration and enforces PAR usage for all clients within the tenant.\n</Note>",
             "example": false
           }
         },
@@ -26003,7 +26006,7 @@
           },
           "code_length": {
             "type": "integer",
-            "description": "Specifies the number of digits in the email recovery verification code.\n>[!note]\n> Only applicable when the verification type includes code-based recovery.",
+            "description": "Specifies the number of digits in the email recovery verification code.\n\n<Note>\n Only applicable when the verification type includes code-based recovery.\n</Note>",
             "format": "int32",
             "example": 6
           }
@@ -26822,7 +26825,7 @@
               "null",
               "string"
             ],
-            "description": "A pre-hashed password value. Useful during migrations to avoid forcing a password reset.\n>[!warning]\n> When provided, password validation and password policy requirements are not enforced. The hash is stored as-is.",
+            "description": "A pre-hashed password value. Useful during migrations to avoid forcing a password reset.\n\n<Warning>\n When provided, password validation and password policy requirements are not enforced. The hash is stored as-is.\n</Warning>",
             "example": "$2a$12$LJdMf15uRsDpd57LKCGxSOTec3MD6jsgJhxRxCeSj2ZKobGo2xPDS"
           },
           "password_hash_algorithm": {
@@ -26977,7 +26980,7 @@
         "properties": {
           "enabled": {
             "type": "boolean",
-            "description": "Indicates whether the identifier restriction list is active.\n>[!note]\n> Pro plan subscription required to use sign-up restrictions.",
+            "description": "Indicates whether the identifier restriction list is active.\n\n<Note>\n Pro plan subscription required to use sign-up restrictions.\n</Note>",
             "example": true
           },
           "identifiers": {
@@ -26986,7 +26989,7 @@
             "items": {
               "type": "string"
             },
-            "description": "A set of identifiers (email addresses, phone numbers, or domains) used for sign-up access control.\n>[!note]\n> Pro plan subscription required to use sign-up restrictions.",
+            "description": "A set of identifiers (email addresses, phone numbers, or domains) used for sign-up access control.\n\n<Note>\n Pro plan subscription required to use sign-up restrictions.\n</Note>",
             "example": [
               "organization.com",
               "example@organization.com",

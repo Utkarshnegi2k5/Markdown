@@ -49,3 +49,32 @@
   padding: 10px 16px;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+/* ================================
+   Custom API Callouts
+   ================================ */
+
+/* NOTE */
+.fern-prose blockquote.custom-note {
+  border-left: 4px solid #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+  padding: 14px 18px;
+  margin: 16px 0;
+  border-radius: 6px;
+}
+
+/* WARNING */
+.fern-prose blockquote.custom-warning {
+  border-left: 4px solid #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 14px 18px;
+  margin: 16px 0;
+  border-radius: 6px;
+}

@@ -123,7 +123,7 @@ logo:
 navbar-links:
   - type: minimal
     text: Sign In
-    href: javascript:window.location.href='https://login.us.monocloud.com/ui/login?auth_id=1607978C7B41728A0E81CA38C342747545FC633888A280811738148E292B5AA2&redirect_uri=' + encodeURIComponent(window.location.href)
+    href: https://login.us.monocloud.com/ui/login?auth_id=1607978C7B41728A0E81CA38C342747545FC633888A280811738148E292B5AA2
     rounded: false
   - type: minimal
     text: Sign Up

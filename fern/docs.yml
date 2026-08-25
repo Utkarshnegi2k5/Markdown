@@ -123,7 +123,7 @@ logo:
 navbar-links:
   - type: minimal
     text: Sign In
-    href: https://login.us.monocloud.com/ui/login?auth_id=1607978C7B41728A0E81CA38C342747545FC633888A280811738148E292B5AA2
+    href: https://login.us.monocloud.com/ui/login?auth_id=YOUR_AUTH_ID&redirect_uri=https%3A%2F%2Fmarkdown-968565.docs.buildwithfern.com%2Fwelcome
     rounded: false
   - type: minimal
     text: Sign Up

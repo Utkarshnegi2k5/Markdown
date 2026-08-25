@@ -1,8 +1,5 @@
 {
   "openapi": "3.1.1",
-  "variables": {
-    "NOTE": "<div class=\"note-box\"><strong>ℹ️ Note:</strong>"
-  },
   "info": {
     "title": "MonoCloud Management API",
     "description": "The MonoCloud Management API provides endpoints for configuring and managing identity infrastructure, including clients, protected resources, users, groups, security controls, cryptographic keys, mTLS configuration, and platform settings within the MonoCloud platform.",
